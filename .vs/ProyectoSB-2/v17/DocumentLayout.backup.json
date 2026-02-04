@@ -3,30 +3,115 @@
   "WorkspaceRootPath": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD51A7D3-A160-4869-9AA7-7A460AB71F53}|ProyectoSB-2\\ProyectoSB-2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\proyectosb-2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD51A7D3-A160-4869-9AA7-7A460AB71F53}|ProyectoSB-2\\ProyectoSB-2.csproj|solutionrelative:proyectosb-2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A9FE1BD-270C-469C-BFF6-DE3D0A571279}|EjerSOLID\\EjerSOLID.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\ejersolid\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9FE1BD-270C-469C-BFF6-DE3D0A571279}|EjerSOLID\\EjerSOLID.csproj|solutionrelative:ejersolid\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9FE1BD-270C-469C-BFF6-DE3D0A571279}|EjerSOLID\\EjerSOLID.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\ejersolid\\reporteemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9FE1BD-270C-469C-BFF6-DE3D0A571279}|EjerSOLID\\EjerSOLID.csproj|solutionrelative:ejersolid\\reporteemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9FE1BD-270C-469C-BFF6-DE3D0A571279}|EjerSOLID\\EjerSOLID.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\ejersolid\\irerporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9FE1BD-270C-469C-BFF6-DE3D0A571279}|EjerSOLID\\EjerSOLID.csproj|solutionrelative:ejersolid\\irerporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9FE1BD-270C-469C-BFF6-DE3D0A571279}|EjerSOLID\\EjerSOLID.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\ejersolid\\gestordereportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9FE1BD-270C-469C-BFF6-DE3D0A571279}|EjerSOLID\\EjerSOLID.csproj|solutionrelative:ejersolid\\gestordereportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9FE1BD-270C-469C-BFF6-DE3D0A571279}|EjerSOLID\\EjerSOLID.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\ejersolid\\reportearchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9FE1BD-270C-469C-BFF6-DE3D0A571279}|EjerSOLID\\EjerSOLID.csproj|solutionrelative:ejersolid\\reportearchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A9FE1BD-270C-469C-BFF6-DE3D0A571279}|EjerSOLID\\EjerSOLID.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\ejersolid\\reporteconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A9FE1BD-270C-469C-BFF6-DE3D0A571279}|EjerSOLID\\EjerSOLID.csproj|solutionrelative:ejersolid\\reporteconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 181,
       "DocumentGroups": [
         {
           "DockedWidth": 383,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReporteConsola.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\EjerSOLID\\ReporteConsola.cs",
+              "RelativeDocumentMoniker": "EjerSOLID\\ReporteConsola.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\EjerSOLID\\ReporteConsola.cs",
+              "RelativeToolTip": "EjerSOLID\\ReporteConsola.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T09:28:18.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReporteArchivo.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\EjerSOLID\\ReporteArchivo.cs",
+              "RelativeDocumentMoniker": "EjerSOLID\\ReporteArchivo.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\EjerSOLID\\ReporteArchivo.cs",
+              "RelativeToolTip": "EjerSOLID\\ReporteArchivo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T09:28:06.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReporteEmail.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\EjerSOLID\\ReporteEmail.cs",
+              "RelativeDocumentMoniker": "EjerSOLID\\ReporteEmail.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\EjerSOLID\\ReporteEmail.cs",
+              "RelativeToolTip": "EjerSOLID\\ReporteEmail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T09:27:56.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GestorDeReportes.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\EjerSOLID\\GestorDeReportes.cs",
+              "RelativeDocumentMoniker": "EjerSOLID\\GestorDeReportes.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\EjerSOLID\\GestorDeReportes.cs",
+              "RelativeToolTip": "EjerSOLID\\GestorDeReportes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T09:27:34.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRerporte.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\EjerSOLID\\IRerporte.cs",
+              "RelativeDocumentMoniker": "EjerSOLID\\IRerporte.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\EjerSOLID\\IRerporte.cs",
+              "RelativeToolTip": "EjerSOLID\\IRerporte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T09:27:05.791Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\ProyectoSB-2\\Program.cs",
-              "RelativeDocumentMoniker": "ProyectoSB-2\\Program.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\ProyectoSB-2\\Program.cs",
-              "RelativeToolTip": "ProyectoSB-2\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\EjerSOLID\\Program.cs",
+              "RelativeDocumentMoniker": "EjerSOLID\\Program.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\EjerSOLID\\Program.cs",
+              "RelativeToolTip": "EjerSOLID\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T08:02:33.821Z",
+              "WhenOpened": "2026-02-04T09:26:10.499Z",
               "EditorCaption": ""
             }
           ]

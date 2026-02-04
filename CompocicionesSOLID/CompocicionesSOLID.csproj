@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DD51A7D3-A160-4869-9AA7-7A460AB71F53}</ProjectGuid>
+    <ProjectGuid>{D84872F5-5A9F-44DE-9145-426EDADA907C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ProyectoSB_2</RootNamespace>
-    <AssemblyName>ProyectoSB-2</AssemblyName>
+    <RootNamespace>CompocicionesSOLID</RootNamespace>
+    <AssemblyName>CompocicionesSOLID</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IPago.cs" />
+    <Compile Include="PagoPayPal.cs" />
+    <Compile Include="PagoTarjeta.cs" />
+    <Compile Include="ProcesadorDePago.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
