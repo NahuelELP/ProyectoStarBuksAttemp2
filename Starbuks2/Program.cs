@@ -10,14 +10,6 @@ namespace Starbuks2
     {
         static void Main(string[] args)
         {
-            GestorDeMostrarConsola gestorConsolola = new GestorDeMostrarConsola();
-            gestorConsolola.MostrarEnConsola(new InterfazUsuario());
-            gestorConsolola.MostrarEnConsola(new InterfazRegistrarseIniciarSesion());
-            gestorConsolola.MostrarEnConsola(new InterfazRegistrarseTipoMembresia());
-            gestorConsolola.MostrarEnConsola(new InterfazRegistrarse());
-            gestorConsolola.MostrarEnConsola(new InterfazIniciarSesion());
-            gestorConsolola.MostrarEnConsola(new InterfazAdmin());
-            gestorConsolola.MostrarEnConsola(new InterfazConsolaAdminUsuario());
         }
     }
 }

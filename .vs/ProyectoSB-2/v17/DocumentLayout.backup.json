@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\gestordemostrarconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\interfazusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\interfazusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -77,18 +73,18 @@
       "VerticalTabListWidth": 181,
       "DocumentGroups": [
         {
-          "DockedWidth": 407,
+          "DockedWidth": 361,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\Program.cs",
               "RelativeDocumentMoniker": "Starbuks2\\Program.cs",
               "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\Program.cs",
               "RelativeToolTip": "Starbuks2\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T09:36:18.988Z",
               "EditorCaption": ""
@@ -96,12 +92,12 @@
           ]
         },
         {
-          "DockedWidth": 359,
+          "DockedWidth": 405,
           "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\Usuario.cs",
               "RelativeDocumentMoniker": "Starbuks2\\Usuario.cs",
@@ -114,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MembresiaGreen.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\MembresiaGreen.cs",
               "RelativeDocumentMoniker": "Starbuks2\\MembresiaGreen.cs",
@@ -133,14 +129,14 @@
               "RelativeDocumentMoniker": "Starbuks2\\GestorDeMostrarConsola.cs",
               "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\GestorDeMostrarConsola.cs",
               "RelativeToolTip": "Starbuks2\\GestorDeMostrarConsola.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T09:12:59.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "InterfazAdmin.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazAdmin.cs",
               "RelativeDocumentMoniker": "Starbuks2\\InterfazAdmin.cs",
@@ -153,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "InterfazConsolaAdminUsuario.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazConsolaAdminUsuario.cs",
               "RelativeDocumentMoniker": "Starbuks2\\InterfazConsolaAdminUsuario.cs",
@@ -166,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "InterfazIniciarSesion.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazIniciarSesion.cs",
               "RelativeDocumentMoniker": "Starbuks2\\InterfazIniciarSesion.cs",
@@ -179,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "InterfazRegistrarse.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazRegistrarse.cs",
               "RelativeDocumentMoniker": "Starbuks2\\InterfazRegistrarse.cs",
@@ -192,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "IInterfazDeLaConsola.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\IInterfazDeLaConsola.cs",
               "RelativeDocumentMoniker": "Starbuks2\\IInterfazDeLaConsola.cs",
@@ -205,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "ICalcularDescuento.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ICalcularDescuento.cs",
               "RelativeDocumentMoniker": "Starbuks2\\ICalcularDescuento.cs",
@@ -218,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "InterfazRegistrarseIniciarSesion.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazRegistrarseIniciarSesion.cs",
               "RelativeDocumentMoniker": "Starbuks2\\InterfazRegistrarseIniciarSesion.cs",
@@ -231,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "InterfazRegistrarseTipoMembresia.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazRegistrarseTipoMembresia.cs",
               "RelativeDocumentMoniker": "Starbuks2\\InterfazRegistrarseTipoMembresia.cs",
@@ -244,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "ITipoDeMembresia.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ITipoDeMembresia.cs",
               "RelativeDocumentMoniker": "Starbuks2\\ITipoDeMembresia.cs",
@@ -257,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "MembresiaBasic.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\MembresiaBasic.cs",
               "RelativeDocumentMoniker": "Starbuks2\\MembresiaBasic.cs",
@@ -270,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "MembresiaGold.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\MembresiaGold.cs",
               "RelativeDocumentMoniker": "Starbuks2\\MembresiaGold.cs",
@@ -283,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "GestorDeMembresias.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\GestorDeMembresias.cs",
               "RelativeDocumentMoniker": "Starbuks2\\GestorDeMembresias.cs",
@@ -292,40 +288,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T09:41:11.29Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "3af09577-ac8a-4508-85cd-48cf4a77cb76",
-        "Display": 0,
-        "X": 484,
-        "Y": 425,
-        "Width": 774,
-        "Height": 586,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InterfazUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazUsuario.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\InterfazUsuario.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazUsuario.cs",
-              "RelativeToolTip": "Starbuks2\\InterfazUsuario.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:02:36.67Z",
               "EditorCaption": ""
             }
           ]

@@ -44,16 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GestorDeMembresias.cs" />
-    <Compile Include="GestorDeMostrarConsola.cs" />
     <Compile Include="ICalcularDescuento.cs" />
-    <Compile Include="IInterfazDeLaConsola.cs" />
-    <Compile Include="InterfazAdmin.cs" />
-    <Compile Include="InterfazConsolaAdminUsuario.cs" />
-    <Compile Include="InterfazIniciarSesion.cs" />
-    <Compile Include="InterfazRegistrarse.cs" />
-    <Compile Include="InterfazRegistrarseIniciarSesion.cs" />
-    <Compile Include="InterfazRegistrarseTipoMembresia.cs" />
-    <Compile Include="InterfazUsuario.cs" />
     <Compile Include="ITipoDeMembresia.cs" />
     <Compile Include="MembresiaBasic.cs" />
     <Compile Include="MembresiaGold.cs" />
