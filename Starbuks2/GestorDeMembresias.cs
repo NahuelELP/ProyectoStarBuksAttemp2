@@ -8,14 +8,14 @@ namespace Starbuks2
 {
     internal class GestorDeMembresias
     {
-        private ICalcularDescuento calcularDescuentoMembresia;
-        public GestorDeMembresias(ICalcularDescuento calcularDescuentoMembresia)
+        private ITipoDeMembresia Membresia;
+        public GestorDeMembresias(ITipoDeMembresia membresia)
         {
-            this.calcularDescuentoMembresia = calcularDescuentoMembresia;
+            Membresia = membresia;
         }
-        public void RealizarDescuento(double precio)
+        public void GetTipoDeMembresia()
         {
-            calcularDescuentoMembresia.CalcularDescuento(precio);
+            Console.WriteLine("Tipo de membresia: {0}", Membresia.TipoMembresia);
         }
     }
 }

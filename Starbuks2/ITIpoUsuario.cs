@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Starbuks2
 {
-    internal interface ITipoDeMembresia
+    internal interface ITipoUsuario
     {
-        int TipoMembresia { get; } // expresion lambda (Membresia => x.Membresia)
+        int Id { get; }
     }
 }

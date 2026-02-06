@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Starbuks2
 {
-    internal interface ITipoDeMembresia
+    internal class Producto
     {
-        int TipoMembresia { get; } // expresion lambda (Membresia => x.Membresia)
+        public string Nombre { get; set; }
+        public double Precio { get; set; }
     }
 }

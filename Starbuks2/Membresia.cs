@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Starbuks2
 {
-    internal interface ICalcularDescuento
+    internal class Membresia : ITipoDeMembresia
     {
-        double CalcularDescuento(double precio);
+        public int TipoMembresia { get; set; }
     }
 }

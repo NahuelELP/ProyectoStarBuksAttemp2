@@ -3,68 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\gestordemostrarconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\gestordemostrarconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\membresiagreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\membresiagreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\interfacesdeconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\interfacesdeconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\gestorentradaconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\gestorentradaconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\interfaziniciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\interfaziniciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\icalculardescuento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\icalculardescuento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\iinterfazdelaconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\iinterfazdelaconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\interfazadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\interfazadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\interfazconsolaadminusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\interfazconsolaadminusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\interfazregistrarse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\interfazregistrarse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\interfazregistrarseiniciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\interfazregistrarseiniciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\interfazregistrarsetipomembresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\interfazregistrarsetipomembresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\itipodemembresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\itipodemembresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\membresiabasic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\membresiabasic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\listadeproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\listadeproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\membresiagold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\membresiagold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\listadeusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\listadeusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\gestordemembresias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\gestordemembresias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\gestordemembresias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\membresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\membresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\listademembresias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\listademembresias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\itipousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\itipousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -73,28 +57,152 @@
       "VerticalTabListWidth": 181,
       "DocumentGroups": [
         {
-          "DockedWidth": 361,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 356,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GestorEntradaConsola.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\GestorEntradaConsola.cs",
+              "RelativeDocumentMoniker": "Starbuks2\\GestorEntradaConsola.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\GestorEntradaConsola.cs",
+              "RelativeToolTip": "Starbuks2\\GestorEntradaConsola.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T10:30:43.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "InterfacesDeConsola.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfacesDeConsola.cs",
+              "RelativeDocumentMoniker": "Starbuks2\\InterfacesDeConsola.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfacesDeConsola.cs",
+              "RelativeToolTip": "Starbuks2\\InterfacesDeConsola.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAlwCwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T10:18:55.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\Producto.cs",
+              "RelativeDocumentMoniker": "Starbuks2\\Producto.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\Producto.cs",
+              "RelativeToolTip": "Starbuks2\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T09:43:29.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ListaDeProductos.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ListaDeProductos.cs",
+              "RelativeDocumentMoniker": "Starbuks2\\ListaDeProductos.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ListaDeProductos.cs",
+              "RelativeToolTip": "Starbuks2\\ListaDeProductos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T09:43:08.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GestorDeMembresias.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\GestorDeMembresias.cs",
+              "RelativeDocumentMoniker": "Starbuks2\\GestorDeMembresias.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\GestorDeMembresias.cs",
+              "RelativeToolTip": "Starbuks2\\GestorDeMembresias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T09:29:53.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Membresia.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\Membresia.cs",
+              "RelativeDocumentMoniker": "Starbuks2\\Membresia.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\Membresia.cs",
+              "RelativeToolTip": "Starbuks2\\Membresia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T09:08:36.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ListaDeMembresias.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ListaDeMembresias.cs",
+              "RelativeDocumentMoniker": "Starbuks2\\ListaDeMembresias.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ListaDeMembresias.cs",
+              "RelativeToolTip": "Starbuks2\\ListaDeMembresias.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T09:07:46.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ListaDeUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ListaDeUsuarios.cs",
+              "RelativeDocumentMoniker": "Starbuks2\\ListaDeUsuarios.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ListaDeUsuarios.cs",
+              "RelativeToolTip": "Starbuks2\\ListaDeUsuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T08:58:11.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ITIpoUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ITIpoUsuario.cs",
+              "RelativeDocumentMoniker": "Starbuks2\\ITIpoUsuario.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ITIpoUsuario.cs",
+              "RelativeToolTip": "Starbuks2\\ITIpoUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T09:26:05.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITipoDeMembresia.cs",
+              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ITipoDeMembresia.cs",
+              "RelativeDocumentMoniker": "Starbuks2\\ITipoDeMembresia.cs",
+              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ITipoDeMembresia.cs",
+              "RelativeToolTip": "Starbuks2\\ITipoDeMembresia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T09:32:39.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\Program.cs",
               "RelativeDocumentMoniker": "Starbuks2\\Program.cs",
               "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\Program.cs",
               "RelativeToolTip": "Starbuks2\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T09:36:18.988Z",
+              "WhenOpened": "2026-02-05T22:56:53.891Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 405,
-          "SelectedChildIndex": 2,
-          "Children": [
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -103,191 +211,9 @@
               "RelativeDocumentMoniker": "Starbuks2\\Usuario.cs",
               "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\Usuario.cs",
               "RelativeToolTip": "Starbuks2\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T09:29:19.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MembresiaGreen.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\MembresiaGreen.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\MembresiaGreen.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\MembresiaGreen.cs",
-              "RelativeToolTip": "Starbuks2\\MembresiaGreen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:41:35.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GestorDeMostrarConsola.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\GestorDeMostrarConsola.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\GestorDeMostrarConsola.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\GestorDeMostrarConsola.cs",
-              "RelativeToolTip": "Starbuks2\\GestorDeMostrarConsola.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:12:59.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InterfazAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazAdmin.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\InterfazAdmin.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazAdmin.cs",
-              "RelativeToolTip": "Starbuks2\\InterfazAdmin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:02:41.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "InterfazConsolaAdminUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazConsolaAdminUsuario.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\InterfazConsolaAdminUsuario.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazConsolaAdminUsuario.cs",
-              "RelativeToolTip": "Starbuks2\\InterfazConsolaAdminUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:02:05.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InterfazIniciarSesion.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazIniciarSesion.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\InterfazIniciarSesion.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazIniciarSesion.cs",
-              "RelativeToolTip": "Starbuks2\\InterfazIniciarSesion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:02:16.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "InterfazRegistrarse.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazRegistrarse.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\InterfazRegistrarse.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazRegistrarse.cs",
-              "RelativeToolTip": "Starbuks2\\InterfazRegistrarse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:02:23.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IInterfazDeLaConsola.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\IInterfazDeLaConsola.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\IInterfazDeLaConsola.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\IInterfazDeLaConsola.cs",
-              "RelativeToolTip": "Starbuks2\\IInterfazDeLaConsola.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T08:58:58.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ICalcularDescuento.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ICalcularDescuento.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\ICalcularDescuento.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ICalcularDescuento.cs",
-              "RelativeToolTip": "Starbuks2\\ICalcularDescuento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:41:48.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "InterfazRegistrarseIniciarSesion.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazRegistrarseIniciarSesion.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\InterfazRegistrarseIniciarSesion.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazRegistrarseIniciarSesion.cs",
-              "RelativeToolTip": "Starbuks2\\InterfazRegistrarseIniciarSesion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:01:59.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "InterfazRegistrarseTipoMembresia.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazRegistrarseTipoMembresia.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\InterfazRegistrarseTipoMembresia.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfazRegistrarseTipoMembresia.cs",
-              "RelativeToolTip": "Starbuks2\\InterfazRegistrarseTipoMembresia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:02:31.071Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ITipoDeMembresia.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ITipoDeMembresia.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\ITipoDeMembresia.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\ITipoDeMembresia.cs",
-              "RelativeToolTip": "Starbuks2\\ITipoDeMembresia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:32:39.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MembresiaBasic.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\MembresiaBasic.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\MembresiaBasic.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\MembresiaBasic.cs",
-              "RelativeToolTip": "Starbuks2\\MembresiaBasic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:41:25.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MembresiaGold.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\MembresiaGold.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\MembresiaGold.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\MembresiaGold.cs",
-              "RelativeToolTip": "Starbuks2\\MembresiaGold.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:41:40.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GestorDeMembresias.cs",
-              "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\GestorDeMembresias.cs",
-              "RelativeDocumentMoniker": "Starbuks2\\GestorDeMembresias.cs",
-              "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\GestorDeMembresias.cs",
-              "RelativeToolTip": "Starbuks2\\GestorDeMembresias.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T09:41:11.29Z",
               "EditorCaption": ""
             }
           ]
