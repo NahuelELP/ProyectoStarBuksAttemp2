@@ -26,7 +26,7 @@ namespace Starbuks2
                     break;
                 case "2":
                     interfacesDeConsola.MostrarInicioDeSesion();
-                    //guradar datos de inicio de sesion
+                    //guradar datos de inicio de sesion ..
                     interfacesDeConsola.MostrarMenuDeUsuario();
                     break;
             }

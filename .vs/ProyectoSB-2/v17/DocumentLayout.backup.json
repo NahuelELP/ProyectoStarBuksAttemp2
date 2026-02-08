@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\interfacesdeconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\interfacesdeconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\gestorentradaconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\gestorentradaconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|c:\\users\\nahue\\desktop\\proyectosb\\intento2\\proyectosb-2\\starbuks2\\interfacesdeconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|solutionrelative:starbuks2\\interfacesdeconsola.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D52D6CB1-6D66-41CC-B73A-ABCEA285B3EF}|Starbuks2\\Starbuks2.csproj|C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\starbuks2\\itipodemembresia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,30 +58,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 356,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GestorEntradaConsola.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\GestorEntradaConsola.cs",
               "RelativeDocumentMoniker": "Starbuks2\\GestorEntradaConsola.cs",
               "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\GestorEntradaConsola.cs",
               "RelativeToolTip": "Starbuks2\\GestorEntradaConsola.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-06T10:30:43.138Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "InterfacesDeConsola.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfacesDeConsola.cs",
               "RelativeDocumentMoniker": "Starbuks2\\InterfacesDeConsola.cs",
               "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\InterfacesDeConsola.cs",
               "RelativeToolTip": "Starbuks2\\InterfacesDeConsola.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAlwCwAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA6wA4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-06T10:18:55.007Z",
               "EditorCaption": ""
@@ -192,20 +192,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\Program.cs",
               "RelativeDocumentMoniker": "Starbuks2\\Program.cs",
               "ToolTip": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\Program.cs",
               "RelativeToolTip": "Starbuks2\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T22:56:53.891Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Starbuks2\\Usuario.cs",
               "RelativeDocumentMoniker": "Starbuks2\\Usuario.cs",
