@@ -19,7 +19,7 @@ namespace Starbuks2
             Nombre = nombre;
             Contraseña = contraseña;
             Id = id;
-            TipoMembresia = TipoMembresia;
+            TipoMembresia = tipoMembresia;
         }
     }
 }
