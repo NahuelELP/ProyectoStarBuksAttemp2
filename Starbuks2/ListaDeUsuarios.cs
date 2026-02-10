@@ -15,8 +15,8 @@ namespace Starbuks2
         }
         public void AgregarUsuariosBase()
         {                                                   //Id  membresia
-            ListaDeLosUsuarios.Add(new Usuario("Juan", "2414", 1, 2));
-            ListaDeLosUsuarios.Add(new Usuario("Mati", "2132", 1, 3));
+            ListaDeLosUsuarios.Add(new Usuario("admin", "0404", 1, 3));
+            ListaDeLosUsuarios.Add(new Usuario("Mati", "2132", 2, 3));
         }
     }
 }

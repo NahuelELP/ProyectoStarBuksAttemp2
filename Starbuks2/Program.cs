@@ -11,10 +11,11 @@ namespace Starbuks2
     {
         static void Main(string[] args)
         {
-            ListaDeUsuarios listaDeUsu = new ListaDeUsuarios();
+            ListaDeUsuarios listaDeUsuarios = new ListaDeUsuarios();
             InterfacesDeConsola interfacesDeConsola = new InterfacesDeConsola();
             GestorEntradaConsola gestorEntradaConsola = new GestorEntradaConsola();
-            GestorDeUsuarios gestorUsuarios = new GestorDeUsuarios(listaDeUsu,gestorEntradaConsola);
+            GestorDeUsuarios gestorUsuarios = new GestorDeUsuarios(listaDeUsuarios, gestorEntradaConsola);
+            listaDeUsuarios.AgregarUsuariosBase();//usuarios base
             interfacesDeConsola.MostrarRegistrarseIniciarSesion();
             gestorEntradaConsola.GuardarDatosDeEntrada(Console.ReadLine());
             switch (gestorEntradaConsola.OpcionSeleccionada)
@@ -23,22 +24,28 @@ namespace Starbuks2
                     interfacesDeConsola.MostrarRegistroDeUsuario();
                     gestorEntradaConsola.GuardarDatoDeEntradaNombre();
                     gestorEntradaConsola.GuardarDatoDeEntradaContraseña();
-                    //guardar datos de registro
                     interfacesDeConsola.MostrarTipoDeMembresia();
+                    //guardar datos de registro
                     gestorEntradaConsola.GuardarDatoDeEntradaMembresia();
                     gestorUsuarios.GuardarNuevoUsuario();
-                    //volver al menu principal do wghile
+                    //volver al menu principal do while
                     break;
                 case "2"://iniciar sesion
-                    interfacesDeConsola.MostrarInicioDeSesion();//nueva clase ke revice en la lista actual de usuarios si el usuario existe y verificar datos
+                    interfacesDeConsola.MostrarInicioDeSesion();
+                    //guardar datos de inicio de sesion
+                    gestorEntradaConsola.GuardarDatoDeEntradaNombre();
+                    gestorEntradaConsola.GuardarDatoDeEntradaContraseña();
                     //guradar datos de inicio de sesion 
-                    interfacesDeConsola.MostrarMenuDeUsuario();
+                    if (gestorUsuarios.BuscarUsuario())
+                    {
+                        interfacesDeConsola.MostrarMenuDeUsuario();
+                    }
                     break;
             }
         }
     }
 }
-/*foreach(Usuario usu in listaDeUsu.ListaDeLosUsuarios)
+/*foreach(Usuario usu in listaDeUsuarios.ListaDeLosUsuarios)
                     {
                         Console.WriteLine(usu.Nombre);
                         Console.WriteLine(usu.Contraseña);
