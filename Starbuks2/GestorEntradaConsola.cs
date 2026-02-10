@@ -12,7 +12,6 @@ namespace Starbuks2
         public string Nombre { get; set; }
         public string Contraseña { get; set; }
         public int TipoDeMembresia { get; set; }
-        private ListaDeUsuarios listaUsuarios;
         public void GuardarDatosDeEntrada(string opcionEntrada)
         {
             OpcionSeleccionada = opcionEntrada;

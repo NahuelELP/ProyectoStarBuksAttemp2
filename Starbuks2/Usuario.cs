@@ -8,10 +8,10 @@ namespace Starbuks2
 {
     internal class Usuario : ITipoDeMembresia, ITipoUsuario
     {
+        public int Id { get; }
         public string Nombre { get; }// expresion lambda (Nombre => x.Nombre)
         public string Contraseña { get; } // expresion lambda (Contraseña => x.contraseña)
-        public int Id { get; }
-
+        public int CategoriaUsuario/*Roll*/ { get; }// implemenar categoria para determinar admin o usuario comun(boleano talvez)
         public int TipoMembresia { get; set; }
 
         public Usuario(string nombre, string contraseña, int id, int tipoMembresia)

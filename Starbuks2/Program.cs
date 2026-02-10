@@ -11,11 +11,11 @@ namespace Starbuks2
     {
         static void Main(string[] args)
         {
-            ListaDeUsuarios listaDeUsuarios = new ListaDeUsuarios();
+            List<Usuario> listaDeUsuarios = new List<Usuario>();
             InterfacesDeConsola interfacesDeConsola = new InterfacesDeConsola();
             GestorEntradaConsola gestorEntradaConsola = new GestorEntradaConsola();
             GestorDeUsuarios gestorUsuarios = new GestorDeUsuarios(listaDeUsuarios, gestorEntradaConsola);
-            listaDeUsuarios.AgregarUsuariosBase();//usuarios base
+            AgreagarUsuariosBase(listaDeUsuarios);//usuarios base
             interfacesDeConsola.MostrarRegistrarseIniciarSesion();
             gestorEntradaConsola.GuardarDatosDeEntrada(Console.ReadLine());
             switch (gestorEntradaConsola.OpcionSeleccionada)
@@ -42,6 +42,11 @@ namespace Starbuks2
                     }
                     break;
             }
+        }
+        static void AgreagarUsuariosBase(List<Usuario> usuarios)//Static: 
+        {
+            usuarios.Add(new Usuario("admin", "0404", 1, 3));
+            usuarios.Add(new Usuario("Mati", "2132", 2, 3));
         }
     }
 }

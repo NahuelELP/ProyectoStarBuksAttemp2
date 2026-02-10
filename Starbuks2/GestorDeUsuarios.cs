@@ -9,10 +9,10 @@ namespace Starbuks2
 {
     internal class GestorDeUsuarios
     {
-        private ListaDeUsuarios listaUsuarios;
+        private List<Usuario> listaUsuarios;
         private GestorEntradaConsola datosEntradaConsola;
 
-        public GestorDeUsuarios(ListaDeUsuarios listaUsuarios, GestorEntradaConsola datosEntradaConsola)
+        public GestorDeUsuarios(List<Usuario> listaUsuarios, GestorEntradaConsola datosEntradaConsola)
         {
             this.listaUsuarios = listaUsuarios;
             this.datosEntradaConsola = datosEntradaConsola;
@@ -20,12 +20,12 @@ namespace Starbuks2
         public void GuardarNuevoUsuario()
         {
             int i = 2;
-            listaUsuarios.ListaDeLosUsuarios.Add(new Usuario(datosEntradaConsola.Nombre, datosEntradaConsola.Contraseña, i++, datosEntradaConsola.TipoDeMembresia));
+            listaUsuarios.Add(new Usuario(datosEntradaConsola.Nombre, datosEntradaConsola.Contraseña, i++, datosEntradaConsola.TipoDeMembresia));
         }
         public bool BuscarUsuario()
         {
-            Usuario usuarioEncontradoDatosEntrada = listaUsuarios.ListaDeLosUsuarios.Find(usuario => usuario.Nombre == datosEntradaConsola.Nombre);
-            Usuario usuarioEncontradoLista = listaUsuarios.ListaDeLosUsuarios.Find(usuario => usuario.Nombre == "admin");
+            Usuario usuarioEncontradoDatosEntrada = listaUsuarios.Find(usuario => usuario.Nombre == datosEntradaConsola.Nombre);
+            Usuario usuarioEncontradoLista = listaUsuarios.Find(usuario => usuario.Nombre == "admin");
             if (usuarioEncontradoDatosEntrada != null && usuarioEncontradoLista != null)
             {
                 return true;//usuario encontrado

@@ -51,7 +51,6 @@
     <Compile Include="ITIpoUsuario.cs" />
     <Compile Include="ListaDeMembresias.cs" />
     <Compile Include="ListaDeProductos.cs" />
-    <Compile Include="ListaDeUsuarios.cs" />
     <Compile Include="Membresia.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Program.cs" />
