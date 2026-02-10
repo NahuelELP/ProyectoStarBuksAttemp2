@@ -9,14 +9,10 @@ namespace Starbuks2
     internal class GestorEntradaConsola
     {
         public string OpcionSeleccionada { get; set; }
-        private string nombre;
-        private string contraseña;
-        private int tipoDeMembresia;
+        public string Nombre { get; set; }
+        public string Contraseña { get; set; }
+        public int TipoDeMembresia { get; set; }
         private ListaDeUsuarios listaUsuarios;
-        public GestorEntradaConsola(ListaDeUsuarios listaUsuarios)
-        {
-            this.listaUsuarios = listaUsuarios;
-        }
         public void GuardarDatosDeEntrada(string opcionEntrada)
         {
             OpcionSeleccionada = opcionEntrada;
@@ -24,20 +20,17 @@ namespace Starbuks2
         public void GuardarDatoDeEntradaNombre()
         {
             Console.WriteLine("Nombre:");
-            this.nombre = Console.ReadLine();
+            Nombre = Console.ReadLine();
         }
         public void GuardarDatoDeEntradaContraseña()
         {
             Console.WriteLine("Contraseña");
-            this.contraseña = Console.ReadLine();
+            Contraseña = Console.ReadLine();
         }
-        public void GuardarDatoDeEntradaMembresia(string tipoMembresia)
+        public void GuardarDatoDeEntradaMembresia()
         {
-            this.tipoDeMembresia = int.Parse(tipoMembresia);
-        }
-        public void GuardarNuevoUsuario()//GestorEntradaConosola, no deberia agregar usuarios.
-        {
-            listaUsuarios.ListaDeLosUsuarios.Add(new Usuario(nombre,contraseña, 1, tipoDeMembresia));
+            Console.WriteLine("Tipo membresia:");
+            TipoDeMembresia = int.Parse(Console.ReadLine());
         }
     }
 }

@@ -18,7 +18,7 @@ namespace Starbuks2
         {
             Nombre = nombre;
             Contraseña = contraseña;
-            Id = id;
+            Id = id;//determinar Id de admin y ke si tiene esa id ke pueda acceder a ciertas partes del programa
             TipoMembresia = tipoMembresia;
         }
     }

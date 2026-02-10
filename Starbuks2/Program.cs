@@ -13,7 +13,8 @@ namespace Starbuks2
         {
             ListaDeUsuarios listaDeUsu = new ListaDeUsuarios();
             InterfacesDeConsola interfacesDeConsola = new InterfacesDeConsola();
-            GestorEntradaConsola gestorEntradaConsola = new GestorEntradaConsola(listaDeUsu);
+            GestorEntradaConsola gestorEntradaConsola = new GestorEntradaConsola();
+            GestorDeUsuarios gestorUsuarios = new GestorDeUsuarios(listaDeUsu,gestorEntradaConsola);
             interfacesDeConsola.MostrarRegistrarseIniciarSesion();
             gestorEntradaConsola.GuardarDatosDeEntrada(Console.ReadLine());
             switch (gestorEntradaConsola.OpcionSeleccionada)
@@ -24,9 +25,8 @@ namespace Starbuks2
                     gestorEntradaConsola.GuardarDatoDeEntradaContraseña();
                     //guardar datos de registro
                     interfacesDeConsola.MostrarTipoDeMembresia();
-                    gestorEntradaConsola.GuardarDatoDeEntradaMembresia(Console.ReadLine());
-                    gestorEntradaConsola.GuardarNuevoUsuario();//clase nueva ke se encargue de guardar el usuario nuevo en la lista de usuarios
-                    //guardar tipo de membresia
+                    gestorEntradaConsola.GuardarDatoDeEntradaMembresia();
+                    gestorUsuarios.GuardarNuevoUsuario();
                     //volver al menu principal do wghile
                     break;
                 case "2"://iniciar sesion
@@ -38,3 +38,10 @@ namespace Starbuks2
         }
     }
 }
+/*foreach(Usuario usu in listaDeUsu.ListaDeLosUsuarios)
+                    {
+                        Console.WriteLine(usu.Nombre);
+                        Console.WriteLine(usu.Contraseña);
+                        Console.WriteLine(usu.TipoMembresia);
+                        Console.WriteLine(usu.Id);
+                    }*/

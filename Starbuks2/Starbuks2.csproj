@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GestorDeMembresias.cs" />
+    <Compile Include="GestorDeUsuarios.cs" />
     <Compile Include="GestorEntradaConsola.cs" />
     <Compile Include="InterfacesDeConsola.cs" />
     <Compile Include="ITipoDeMembresia.cs" />
