@@ -11,42 +11,62 @@ namespace Starbuks2
     {
         static void Main(string[] args)
         {
-            List<Usuario> listaDeUsuarios = new List<Usuario>();
+            List<Producto> productos = new List<Producto>();//lista de productos
+            List<Membresia> membresias = new List<Membresia>();//lista de membresias
+            List<Usuario> listaDeUsuarios = new List<Usuario>();//lista de usuarios
             InterfacesDeConsola interfacesDeConsola = new InterfacesDeConsola();
             GestorEntradaConsola gestorEntradaConsola = new GestorEntradaConsola();
             GestorDeUsuarios gestorUsuarios = new GestorDeUsuarios(listaDeUsuarios, gestorEntradaConsola);
             AgreagarUsuariosBase(listaDeUsuarios);//usuarios base
-            interfacesDeConsola.MostrarRegistrarseIniciarSesion();
-            gestorEntradaConsola.GuardarDatosDeEntrada(Console.ReadLine());
-            switch (gestorEntradaConsola.OpcionSeleccionada)
+            AgregarMemebresiasBase(membresias);
+            do
             {
-                case "1"://registrarse
-                    interfacesDeConsola.MostrarRegistroDeUsuario();
-                    gestorEntradaConsola.GuardarDatoDeEntradaNombre();
-                    gestorEntradaConsola.GuardarDatoDeEntradaContraseña();
-                    interfacesDeConsola.MostrarTipoDeMembresia();
-                    //guardar datos de registro
-                    gestorEntradaConsola.GuardarDatoDeEntradaMembresia();
-                    gestorUsuarios.GuardarNuevoUsuario();
-                    //volver al menu principal do while
-                    break;
-                case "2"://iniciar sesion
-                    interfacesDeConsola.MostrarInicioDeSesion();
-                    //guardar datos de inicio de sesion
-                    gestorEntradaConsola.GuardarDatoDeEntradaNombre();
-                    gestorEntradaConsola.GuardarDatoDeEntradaContraseña();
-                    //guradar datos de inicio de sesion 
-                    if (gestorUsuarios.BuscarUsuario())
-                    {
-                        interfacesDeConsola.MostrarMenuDeUsuario();
-                    }
-                    break;
-            }
+                interfacesDeConsola.MostrarRegistrarseIniciarSesion();
+                gestorEntradaConsola.GuardarDatosDeEntrada(Console.ReadLine());
+                switch (gestorEntradaConsola.OpcionSeleccionada)
+                {
+                    case "1"://registrarse
+                        interfacesDeConsola.MostrarRegistroDeUsuario();
+                        gestorEntradaConsola.GuardarDatoDeEntradaNombre();
+                        gestorEntradaConsola.GuardarDatoDeEntradaContraseña();
+                        interfacesDeConsola.MostrarTipoDeMembresia();
+                        //guardar datos de registro
+                        gestorEntradaConsola.GuardarDatoDeEntradaMembresia();
+                        gestorUsuarios.GuardarNuevoUsuario();
+                        //volver al menu principal do while
+                        break;
+                    case "2"://iniciar sesion
+                        interfacesDeConsola.MostrarInicioDeSesion();
+                        //guardar datos de inicio de sesion
+                        gestorEntradaConsola.GuardarDatoDeEntradaNombre();
+                        gestorEntradaConsola.GuardarDatoDeEntradaContraseña();
+                        //guradar datos de inicio de sesion 
+                        if (gestorUsuarios.BuscarUsuario())
+                        {
+                            Console.WriteLine("Usuario Encontrado");
+                            //Guardar dato de entrada para menu de usuario y mostrar menu de usuario
+                            interfacesDeConsola.MostrarMenuDeUsuario();
+                            gestorEntradaConsola.GuardarDatoDeEntradaMenuUsuario();
+                            //al terminar de hacer la compra terminar proceso
+                        }
+                        else
+                        {
+                            Console.WriteLine("Usuario o contraseña incorrectos");
+                        }
+                        break;
+                }
+            } while (gestorEntradaConsola.OpcionSeleccionada == "1" || gestorEntradaConsola.OpcionSeleccionada == "2");
         }
-        static void AgreagarUsuariosBase(List<Usuario> usuarios)//Static: 
+        static void AgreagarUsuariosBase(List<Usuario> usuarios)
         {
             usuarios.Add(new Usuario("admin", "0404", 1, 3));
             usuarios.Add(new Usuario("Mati", "2132", 2, 3));
+        }
+        static void AgregarMemebresiasBase(List<Membresia> membresias)
+        {
+            membresias.Add(new Membresia() { TipoMembresia = 1 });
+            membresias.Add(new Membresia() { TipoMembresia = 2 });
+            membresias.Add(new Membresia() { TipoMembresia = 3 });
         }
     }
 }
