@@ -59,8 +59,8 @@ namespace Starbuks2
         }
         static void AgreagarUsuariosBase(List<Usuario> usuarios)
         {
-            usuarios.Add(new Usuario("admin", "0404", 1, 3));
-            usuarios.Add(new Usuario("Mati", "2132", 2, 3));
+            usuarios.Add(new Usuario("admin" ,"0404",1 ,UserRoll.Admin ,3));
+            usuarios.Add(new Usuario("Mati" ,"2132" ,2 ,UserRoll.Normal ,3));
         }
         static void AgregarMemebresiasBase(List<Membresia> membresias)
         {

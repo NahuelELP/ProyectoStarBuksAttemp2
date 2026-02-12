@@ -11,6 +11,7 @@ namespace Starbuks2
     {
         private List<Usuario> listaUsuarios;
         private GestorEntradaConsola datosEntradaConsola;
+        private Usuario usuarioLogeado;
 
         public GestorDeUsuarios(List<Usuario> listaUsuarios, GestorEntradaConsola datosEntradaConsola)
         {
@@ -20,13 +21,12 @@ namespace Starbuks2
         public void GuardarNuevoUsuario()
         {
             int i = 2;
-            listaUsuarios.Add(new Usuario(datosEntradaConsola.Nombre, datosEntradaConsola.Contraseña, i++, datosEntradaConsola.TipoDeMembresia));
+            listaUsuarios.Add(new Usuario(datosEntradaConsola.Nombre, datosEntradaConsola.Contraseña, i++,UserRoll.Normal , datosEntradaConsola.TipoDeMembresia));
         }
         public bool BuscarUsuario()
         {
-            Usuario usuarioEncontradoDatosEntrada = listaUsuarios.Find(usuario => usuario.Nombre == datosEntradaConsola.Nombre);
-            Usuario usuarioEncontradoLista = listaUsuarios.Find(usuario => usuario.Nombre == "admin");
-            if (usuarioEncontradoDatosEntrada != null && usuarioEncontradoLista != null)
+            usuarioLogeado = listaUsuarios.Find(usuario => usuario.Nombre == datosEntradaConsola.Nombre && usuario.Contraseña == datosEntradaConsola.Contraseña);
+            if (usuarioLogeado != null)
             {
                 return true;//usuario encontrado
             }
@@ -37,9 +37,17 @@ namespace Starbuks2
             //Buscar el usuario por ID, pensar forma para determinar usuario o admin. setear el valor 1 para admin.
             //generar un numero incrementado dsp de 1 para los siguiente usuarios
         }
-        public void AdminOUsuario()
+        public bool AdminOUsuario()//esto es para validar si es admin o usuario normal, devuelve bool para dsp mostrar el menu que ncesite
         {
-            //setear un valor numero fijo para admin
+            usuarioLogeado = listaUsuarios.Find(usuario => usuario.Nombre == datosEntradaConsola.Nombre && usuario.Contraseña == datosEntradaConsola.Contraseña);
+            if (usuarioLogeado.Roll == UserRoll.Admin)
+            {
+                return true;//usuario encontrado
+            }
+            else
+            {
+                return false;//usuario no encontrado
+            }
         }
     }
 }
