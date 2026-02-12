@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Carrito.cs" />
     <Compile Include="GestorDeMembresias.cs" />
     <Compile Include="GestorDeUsuarios.cs" />
     <Compile Include="GestorEntradaConsola.cs" />

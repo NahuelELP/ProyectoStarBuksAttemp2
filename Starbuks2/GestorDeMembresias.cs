@@ -17,5 +17,5 @@ namespace Starbuks2
         {
             Console.WriteLine("Tipo de membresia: {0}", Membresia.TipoMembresia);
         }
-    }
+    }//eliminar gestor de membresias y agregar Enum de membresias 
 }

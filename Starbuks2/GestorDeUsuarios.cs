@@ -21,7 +21,7 @@ namespace Starbuks2
         public void GuardarNuevoUsuario()
         {
             int i = 2;
-            listaUsuarios.Add(new Usuario(datosEntradaConsola.Nombre, datosEntradaConsola.Contraseña, i++,UserRoll.Normal , datosEntradaConsola.TipoDeMembresia));
+            listaUsuarios.Add(new Usuario(datosEntradaConsola.Nombre, datosEntradaConsola.Contraseña, i++, UserRoll.Normal, datosEntradaConsola.TipoDeMembresia));
         }
         public bool BuscarUsuario()
         {
@@ -34,19 +34,17 @@ namespace Starbuks2
             {
                 return false;//usuario no encontrado
             }
-            //Buscar el usuario por ID, pensar forma para determinar usuario o admin. setear el valor 1 para admin.
-            //generar un numero incrementado dsp de 1 para los siguiente usuarios
         }
-        public bool AdminOUsuario()//esto es para validar si es admin o usuario normal, devuelve bool para dsp mostrar el menu que ncesite
+        public bool AdminOUsuario()
         {
             usuarioLogeado = listaUsuarios.Find(usuario => usuario.Nombre == datosEntradaConsola.Nombre && usuario.Contraseña == datosEntradaConsola.Contraseña);
             if (usuarioLogeado.Roll == UserRoll.Admin)
             {
-                return true;//usuario encontrado
+                return true;//usuario admin 
             }
             else
             {
-                return false;//usuario no encontrado
+                return false;//usuario normal
             }
         }
     }

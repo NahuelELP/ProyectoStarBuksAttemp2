@@ -11,6 +11,7 @@ namespace Starbuks2
     {
         static void Main(string[] args)
         {
+            List<Producto> ProductosEnCarrito = new List<Producto>();//carrito de compras
             List<Producto> productos = new List<Producto>();//lista de productos
             List<Membresia> membresias = new List<Membresia>();//lista de membresias
             List<Usuario> listaDeUsuarios = new List<Usuario>();//lista de usuarios
@@ -18,11 +19,13 @@ namespace Starbuks2
             GestorEntradaConsola gestorEntradaConsola = new GestorEntradaConsola();
             GestorDeUsuarios gestorUsuarios = new GestorDeUsuarios(listaDeUsuarios, gestorEntradaConsola);
             AgreagarUsuariosBase(listaDeUsuarios);//usuarios base
-            AgregarMemebresiasBase(membresias);
+            AgregarMemebresiasBase(membresias);//eliminar
+            AgregarProductosStock(productos);//productos base
             do
             {
                 interfacesDeConsola.MostrarRegistrarseIniciarSesion();
                 gestorEntradaConsola.GuardarDatosDeEntrada(Console.ReadLine());
+                Console.Clear();
                 switch (gestorEntradaConsola.OpcionSeleccionada)
                 {
                     case "1"://registrarse
@@ -33,6 +36,7 @@ namespace Starbuks2
                         //guardar datos de registro
                         gestorEntradaConsola.GuardarDatoDeEntradaMembresia();
                         gestorUsuarios.GuardarNuevoUsuario();
+                        Console.Clear();
                         //volver al menu principal do while
                         break;
                     case "2"://iniciar sesion
@@ -40,14 +44,21 @@ namespace Starbuks2
                         //guardar datos de inicio de sesion
                         gestorEntradaConsola.GuardarDatoDeEntradaNombre();
                         gestorEntradaConsola.GuardarDatoDeEntradaContraseña();
+                        Console.Clear();
                         //guradar datos de inicio de sesion 
                         if (gestorUsuarios.BuscarUsuario())
                         {
                             Console.WriteLine("Usuario Encontrado");
+                            if(gestorUsuarios.AdminOUsuario())
+                            {
+                                interfacesDeConsola.MostrarMenuDeAdmin();
+                            }
+                            else
+                            {
+                                interfacesDeConsola.MostrarMenuDeUsuario();
+                                gestorEntradaConsola.GuardarDatoDeEntradaMenu();
+                            }
                             //Guardar dato de entrada para menu de usuario y mostrar menu de usuario
-                            interfacesDeConsola.MostrarMenuDeUsuario();
-                            gestorEntradaConsola.GuardarDatoDeEntradaMenuUsuario();
-                            //al terminar de hacer la compra terminar proceso
                         }
                         else
                         {
@@ -64,9 +75,17 @@ namespace Starbuks2
         }
         static void AgregarMemebresiasBase(List<Membresia> membresias)
         {
-            membresias.Add(new Membresia() { TipoMembresia = 1 });
+            membresias.Add(new Membresia() { TipoMembresia = 1 });//eliminar
             membresias.Add(new Membresia() { TipoMembresia = 2 });
             membresias.Add(new Membresia() { TipoMembresia = 3 });
+        }
+        static void AgregarProductosStock(List<Producto> productos)
+        {
+            productos.Add(new Producto("cafe",0.5));
+            productos.Add(new Producto("Capuccino", 0.5));
+            productos.Add(new Producto("Frappuccino", 0.5));
+            productos.Add(new Producto("cafe con leche", 0.5));
+            productos.Add(new Producto("cafe lagrima", 0.5));
         }
     }
 }

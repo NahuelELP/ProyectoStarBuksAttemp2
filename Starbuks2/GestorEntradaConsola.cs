@@ -32,7 +32,7 @@ namespace Starbuks2
             Console.WriteLine("Tipo membresia:");
             TipoDeMembresia = int.Parse(Console.ReadLine());
         }
-        public void GuardarDatoDeEntradaMenuUsuario()
+        public void GuardarDatoDeEntradaMenu()
         {
             Console.WriteLine("Opcion: (SELECCIONE NUMERO)");
             OpcionSeleccionada = Console.ReadLine();
