@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace Starbuks2
 {
-    internal class Usuario : ITipoDeMembresia, ITipoUsuario
+    internal class Usuario : ITipoUsuario
     {
         public int Id { get; }
         public string Nombre { get; }
         public string Contraseña { get; }
         public UserRoll Roll { get; }
-        public int TipoMembresia { get; set; }//enum
+        public TipoMembresia TipoDeMembresia { get; set; }//enum
 
-        public Usuario(string nombre, string contraseña, int id,UserRoll roll, int tipoMembresia)
+        public Usuario(string nombre, string contraseña, int id,UserRoll roll, TipoMembresia tipoDeMembresia)
         {
             Nombre = nombre;
             Contraseña = contraseña;
             Id = id;
-            TipoMembresia = tipoMembresia;
+            TipoDeMembresia = tipoDeMembresia;
             Roll = roll;
         }
     }

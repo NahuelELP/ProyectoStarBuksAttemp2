@@ -13,13 +13,11 @@ namespace Starbuks2
         {
             List<Producto> ProductosEnCarrito = new List<Producto>();//carrito de compras
             List<Producto> productos = new List<Producto>();//lista de productos
-            List<Membresia> membresias = new List<Membresia>();//lista de membresias
             List<Usuario> listaDeUsuarios = new List<Usuario>();//lista de usuarios
             InterfacesDeConsola interfacesDeConsola = new InterfacesDeConsola();
             GestorEntradaConsola gestorEntradaConsola = new GestorEntradaConsola();
             GestorDeUsuarios gestorUsuarios = new GestorDeUsuarios(listaDeUsuarios, gestorEntradaConsola);
             AgreagarUsuariosBase(listaDeUsuarios);//usuarios base
-            AgregarMemebresiasBase(membresias);//eliminar
             AgregarProductosStock(productos);//productos base
             do
             {
@@ -73,19 +71,13 @@ namespace Starbuks2
             usuarios.Add(new Usuario("admin" ,"0404",1 ,UserRoll.Admin ,3));
             usuarios.Add(new Usuario("Mati" ,"2132" ,2 ,UserRoll.Normal ,3));
         }
-        static void AgregarMemebresiasBase(List<Membresia> membresias)
-        {
-            membresias.Add(new Membresia() { TipoMembresia = 1 });//eliminar
-            membresias.Add(new Membresia() { TipoMembresia = 2 });
-            membresias.Add(new Membresia() { TipoMembresia = 3 });
-        }
         static void AgregarProductosStock(List<Producto> productos)
         {
             productos.Add(new Producto("cafe",0.5));
-            productos.Add(new Producto("Capuccino", 0.5));
-            productos.Add(new Producto("Frappuccino", 0.5));
-            productos.Add(new Producto("cafe con leche", 0.5));
-            productos.Add(new Producto("cafe lagrima", 0.5));
+            productos.Add(new Producto("Capuccino", 0.8));
+            productos.Add(new Producto("Frappuccino", 1.2));
+            productos.Add(new Producto("cafe con leche", 0.9));
+            productos.Add(new Producto("cafe lagrima", 0.6));
         }
     }
 }

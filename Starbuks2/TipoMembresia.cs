@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Starbuks2
 {
-    internal interface ITipoDeMembresia
+    public enum TipoMembresia
     {
-        int TipoMembresia { get; } // expresion lambda (Membresia => x.Membresia)
+        Basic,
+        Green,
+        Gold,
     }
 }

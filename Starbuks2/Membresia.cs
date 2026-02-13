@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Starbuks2
 {
-    internal class Membresia : ITipoDeMembresia
+    internal class Membresia 
     {
         public int TipoMembresia { get; set; }
     }

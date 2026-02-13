@@ -11,7 +11,7 @@ namespace Starbuks2
         public string OpcionSeleccionada { get; set; }
         public string Nombre { get; set; }
         public string Contraseña { get; set; }
-        public int TipoDeMembresia { get; set; }
+        public TipoMembresia[] TipoMembresia = (TipoMembresia[])Enum.GetValues(typeof(TipoMembresia));
         public int Roll { get; set; }
         public void GuardarDatosDeEntrada(string opcionEntrada)
         {
@@ -30,7 +30,8 @@ namespace Starbuks2
         public void GuardarDatoDeEntradaMembresia()
         {
             Console.WriteLine("Tipo membresia:");
-            TipoDeMembresia = int.Parse(Console.ReadLine());
+            int input = int.Parse(Console.ReadLine()); //solucionar y buscar forma de guardar la membresia enum
+            TipoMembresia seleccion = TipoMembresia[input - 1];
         }
         public void GuardarDatoDeEntradaMenu()
         {
