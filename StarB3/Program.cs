@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Starbuks2
+namespace StarB3
 {
-    internal class Membresia 
+    internal class Program
     {
-        public int TipoMembresia { get; set; }
+        static void Main(string[] args)
+        {
+        }
     }
 }

@@ -14,6 +14,8 @@ namespace Starbuks2
             List<Producto> ProductosEnCarrito = new List<Producto>();//carrito de compras
             List<Producto> productos = new List<Producto>();//lista de productos
             List<Usuario> listaDeUsuarios = new List<Usuario>();//lista de usuarios
+            Carrito carrito = new Carrito(productos);
+            GestorDeProductos gestorDeProductos = new GestorDeProductos(productos);
             InterfacesDeConsola interfacesDeConsola = new InterfacesDeConsola();
             GestorEntradaConsola gestorEntradaConsola = new GestorEntradaConsola();
             GestorDeUsuarios gestorUsuarios = new GestorDeUsuarios(listaDeUsuarios, gestorEntradaConsola);
@@ -43,20 +45,64 @@ namespace Starbuks2
                         gestorEntradaConsola.GuardarDatoDeEntradaNombre();
                         gestorEntradaConsola.GuardarDatoDeEntradaContraseña();
                         Console.Clear();
-                        //guradar datos de inicio de sesion 
                         if (gestorUsuarios.BuscarUsuario())
                         {
                             Console.WriteLine("Usuario Encontrado");
                             if(gestorUsuarios.AdminOUsuario())
                             {
-                                interfacesDeConsola.MostrarMenuDeAdmin();
+                                int input;
+                                do 
+                                {
+                                    interfacesDeConsola.MostrarMenuDeAdmin();
+                                    input = int.Parse(Console.ReadLine());
+                                    switch (input)
+                                    {
+                                        case 1:
+                                            gestorDeProductos.AgregarProducto();
+                                            break;
+                                        case 2:
+                                            gestorDeProductos.EliminarProducto();
+                                            break;
+                                        case 3:
+                                            gestorDeProductos.VerProductos();
+                                            break;
+                                        case 4:
+                                            gestorDeProductos.EditarProducto();
+                                            break;
+                                        default:
+                                            Console.WriteLine("Salir...");
+                                            break;
+                                    }
+                                } while (input < 5);
                             }
                             else
                             {
-                                interfacesDeConsola.MostrarMenuDeUsuario();
-                                gestorEntradaConsola.GuardarDatoDeEntradaMenu();
+                                int input;
+                                do
+                                {
+                                    interfacesDeConsola.MostrarMenuDeUsuario();
+                                    input = int.Parse(Console.ReadLine());
+                                    switch (input)
+                                    {
+                                        case 1://ver productos lista
+                                            carrito.VerProdutos();
+                                            carrito.AgregarProducto(Console.ReadLine());
+                                            break;
+                                        case 2://eliminar producto del carrito
+                                            
+                                            break;
+                                        case 3://ver carrito actual
+
+                                            break;
+                                        case 4://finalizar compra
+
+                                            break;
+                                        default:
+                                            Console.WriteLine("Salir...");
+                                            break;
+                                    }
+                                } while (input < 5);
                             }
-                            //Guardar dato de entrada para menu de usuario y mostrar menu de usuario
                         }
                         else
                         {
@@ -68,8 +114,8 @@ namespace Starbuks2
         }
         static void AgreagarUsuariosBase(List<Usuario> usuarios)
         {
-            usuarios.Add(new Usuario("admin" ,"0404",1 ,UserRoll.Admin ,3));
-            usuarios.Add(new Usuario("Mati" ,"2132" ,2 ,UserRoll.Normal ,3));
+            usuarios.Add(new Usuario("admin" ,"0404",1 ,UserRoll.Admin , TipoMembresia.Gold));
+            usuarios.Add(new Usuario("Mati" ,"2132" ,2 ,UserRoll.Normal ,TipoMembresia.Basic));
         }
         static void AgregarProductosStock(List<Producto> productos)
         {
@@ -81,10 +127,3 @@ namespace Starbuks2
         }
     }
 }
-/*foreach(Usuario usu in listaDeUsuarios.ListaDeLosUsuarios)
-                    {
-                        Console.WriteLine(usu.Nombre);
-                        Console.WriteLine(usu.Contraseña);
-                        Console.WriteLine(usu.TipoMembresia);
-                        Console.WriteLine(usu.Id);
-                    }*/

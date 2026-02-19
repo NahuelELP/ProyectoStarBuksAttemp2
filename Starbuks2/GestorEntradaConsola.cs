@@ -8,10 +8,10 @@ namespace Starbuks2
 {
     internal class GestorEntradaConsola
     {
-        public string OpcionSeleccionada { get; set; }
+        public string OpcionSeleccionada { get; private set; }
         public string Nombre { get; set; }
-        public string Contraseña { get; set; }
-        public TipoMembresia[] TipoMembresia = (TipoMembresia[])Enum.GetValues(typeof(TipoMembresia));
+        public string Contraseña { get; private set; }
+        public TipoMembresia TipoMembresia { get; private set; }
         public int Roll { get; set; }
         public void GuardarDatosDeEntrada(string opcionEntrada)
         {
@@ -30,8 +30,8 @@ namespace Starbuks2
         public void GuardarDatoDeEntradaMembresia()
         {
             Console.WriteLine("Tipo membresia:");
-            int input = int.Parse(Console.ReadLine()); //solucionar y buscar forma de guardar la membresia enum
-            TipoMembresia seleccion = TipoMembresia[input - 1];
+            int input = int.Parse(Console.ReadLine());
+            TipoMembresia membresiaSeleccionada = (TipoMembresia)input;
         }
         public void GuardarDatoDeEntradaMenu()
         {

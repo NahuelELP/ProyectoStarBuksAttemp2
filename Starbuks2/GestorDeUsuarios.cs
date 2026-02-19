@@ -21,7 +21,7 @@ namespace Starbuks2
         public void GuardarNuevoUsuario()
         {
             int i = 2;
-            listaUsuarios.Add(new Usuario(datosEntradaConsola.Nombre, datosEntradaConsola.Contraseña, i++, UserRoll.Normal, datosEntradaConsola.TipoDeMembresia));
+            listaUsuarios.Add(new Usuario(datosEntradaConsola.Nombre, datosEntradaConsola.Contraseña, i++, UserRoll.Normal, datosEntradaConsola.TipoMembresia));
         }
         public bool BuscarUsuario()
         {

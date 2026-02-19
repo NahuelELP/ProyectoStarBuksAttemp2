@@ -38,11 +38,10 @@ namespace Starbuks2
         }
         public void MostrarMenuDeUsuario()//menu de usuario
         {
-            Console.WriteLine("1. Agregar producto");
+            Console.WriteLine("1. Ver productos");
             Console.WriteLine("2. Borrar producto");
-            Console.WriteLine("3. Ver productos");
-            Console.WriteLine("4. Ver carrito actual");
-            Console.WriteLine("5. finalizar compra");
+            Console.WriteLine("3. Ver carrito actual");
+            Console.WriteLine("4. finalizar compra");
         }
         public void MostrarMenuDeAdmin()//menu de admin
         {
@@ -50,6 +49,7 @@ namespace Starbuks2
             Console.WriteLine("2. Borrar Producto");
             Console.WriteLine("3. Ver Producto/s");
             Console.WriteLine("4. Editar Producto");
+            Console.WriteLine("5. Salir");
         }
     }
 }

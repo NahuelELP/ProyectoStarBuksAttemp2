@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Starbuks2
+namespace StarB3
 {
-    public enum TipoMembresia
+    internal class Producto
     {
-        Basic = 1,
-        Green = 2,
-        Gold = 3,
+        public string Nombre { get; set; }
+        public double Precio { get; set; }
     }
 }

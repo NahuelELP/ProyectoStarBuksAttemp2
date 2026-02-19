@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Starbuks2
+namespace StarB3
 {
-    public enum TipoMembresia
+    public enum TipoDeMembresia
     {
-        Basic = 1,
-        Green = 2,
-        Gold = 3,
+        basic = 1,
+        green = 2,
+        gold = 3,
     }
 }

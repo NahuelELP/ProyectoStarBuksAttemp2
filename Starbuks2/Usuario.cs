@@ -12,7 +12,7 @@ namespace Starbuks2
         public string Nombre { get; }
         public string Contraseña { get; }
         public UserRoll Roll { get; }
-        public TipoMembresia TipoDeMembresia { get; set; }//enum
+        public TipoMembresia TipoDeMembresia { get;}
 
         public Usuario(string nombre, string contraseña, int id,UserRoll roll, TipoMembresia tipoDeMembresia)
         {
