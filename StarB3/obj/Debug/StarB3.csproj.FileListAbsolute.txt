@@ -1,0 +1,8 @@
+C:\Users\nahue\Desktop\ProyectoStarBuksAttemp2\StarB3\bin\Debug\StarB3.exe.config
+C:\Users\nahue\Desktop\ProyectoStarBuksAttemp2\StarB3\bin\Debug\StarB3.exe
+C:\Users\nahue\Desktop\ProyectoStarBuksAttemp2\StarB3\bin\Debug\StarB3.pdb
+C:\Users\nahue\Desktop\ProyectoStarBuksAttemp2\StarB3\obj\Debug\StarB3.csproj.AssemblyReference.cache
+C:\Users\nahue\Desktop\ProyectoStarBuksAttemp2\StarB3\obj\Debug\StarB3.csproj.CoreCompileInputs.cache
+C:\Users\nahue\Desktop\ProyectoStarBuksAttemp2\StarB3\obj\Debug\StarB3.exe
+C:\Users\nahue\Desktop\ProyectoStarBuksAttemp2\StarB3\obj\Debug\StarB3.pdb
+C:\Users\nahue\Desktop\ProyectoStarBuksAttemp2\StarB3\obj\Debug\StarB3.exe.config

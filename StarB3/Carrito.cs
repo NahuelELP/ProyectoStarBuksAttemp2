@@ -30,5 +30,12 @@ namespace StarB3
         {
             listaDeProductosEnCarrito.Clear();
         }
+        public void ListaDeCarrito()
+        {
+            foreach (Producto x in listaDeProductosEnCarrito)
+            {
+                Console.WriteLine(x.Nombre + " " + x.Precio);
+            }
+        }
     }
 }
