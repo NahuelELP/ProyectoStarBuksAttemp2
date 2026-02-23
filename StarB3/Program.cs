@@ -16,6 +16,8 @@ namespace StarB3
             gestorDeProductos.AgregarStock(new Producto("Cafe", 0.5));
             gestorDeProductos.AgregarStock(new Producto("Te", 0.3));
             gestorDeProductos.AgregarStock(new Producto("Chocolate", 0.7));
+            gestorDeProductos.AgregarStock(new Producto("Muffin", 1.0));
+            gestorDeProductos.AgregarStock(new Producto("Galleta", 0.8));
             int input = 0;
             do
             {
@@ -40,22 +42,39 @@ namespace StarB3
                             int input2 = 0;
                             do
                             {
-                                Console.WriteLine("entraste al menu de usuario");
-                                Console.ReadKey();
-                                /*
-                                   1 Ver productos disponibles
-
-                                   2 Agregar producto al carrito
-
-                                   3 Quitar producto del carrito
-
-                                   4 Ver subtotal
-
-                                   5 Finalizar compra
-
-                                   6 Cerrar sesión
-                                 */
-                            } while (input2 <= 6);
+                                Console.WriteLine("1. Ver productos disponibles\n2. Agregar producto al carrito\n3. Quitar producto del carrito" +
+                                                  "\n4. Ver SubTotal\n5. Finalizar Compra\n6. Cerrar Sesion");
+                                input2 = int.Parse(Console.ReadLine());
+                                switch (input2)
+                                {
+                                    case 1:
+                                        gestorDeProductos.ListaProductos().ForEach(x => Console.WriteLine($@"{x.Nombre} ${x.Precio}"));
+                                        break;
+                                    case 2:
+                                        Console.WriteLine("Ingrese el nombre del producto que desea agregar al carrito:");
+                                        string nombreProductoAgregar = Console.ReadLine();
+                                        Producto productoAgregar = gestorDeProductos.BuscarProductoPorNombre(nombreProductoAgregar);
+                                        carritoDeUsuario.AgregarProducto(productoAgregar);
+                                        break;
+                                    case 3:
+                                        Console.WriteLine("Ingrese el nombre del producto que desea quitar del carrito:");
+                                        string nombreProductoQuitar = Console.ReadLine();
+                                        Producto productoQuitar = gestorDeProductos.BuscarProductoPorNombre(nombreProductoQuitar);
+                                        carritoDeUsuario.QuitarProduto(productoQuitar);
+                                        break;
+                                    case 4:
+                                        Console.WriteLine($@"Subtotal: ${carritoDeUsuario.CalcularSubTotal()}");
+                                        double subTotalConDescuento = serviciosDeDescuento.AplicarDescuentos(carritoDeUsuario,gestorDeUsuarios.VerTipoMembresia(gestorDeUsuarios.DevolverUsuario(nombre)));
+                                        Console.WriteLine($@"Subtotal con descuento: ${subTotalConDescuento}");
+                                        break;
+                                    case 5:
+                                        //falta Finalizar Compra (venta)
+                                        break;
+                                    default:
+                                        input2 = 6;//salir
+                                        break;
+                                }
+                            } while (input2 >= 1 && input2 <=5);
                         }
                         else
                         {

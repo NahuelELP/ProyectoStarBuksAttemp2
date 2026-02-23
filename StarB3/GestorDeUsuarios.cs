@@ -31,5 +31,25 @@ namespace StarB3
             usuarios.Add(UsuarioRegistrado);
             return UsuarioRegistrado;
         }
+        public void EliminarUsuario(Usuario usuario)
+        {
+            usuarios.Remove(usuario);
+        }
+        public Usuario DevolverUsuario(string nombre)
+        {
+            Usuario usuaruiEncontrado = usuarios.Find(x => x.Nombre == nombre);
+            return usuaruiEncontrado;
+        }
+        public TipoDeMembresia VerTipoMembresia(Usuario usuario)
+        {
+            foreach (Usuario x in usuarios)
+            {
+                if (x.Nombre == usuario.Nombre)
+                {
+                    return x.TipoDeMembresia;
+                }
+            }
+            return TipoDeMembresia.normal;
+        }
     }
 }

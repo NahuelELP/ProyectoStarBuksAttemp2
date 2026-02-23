@@ -8,8 +8,9 @@ namespace StarB3
 {
     public enum TipoDeMembresia
     {
+        normal = 0,
         basic = 1,
         green = 2,
-        gold = 3,
+        gold = 3
     }
 }
