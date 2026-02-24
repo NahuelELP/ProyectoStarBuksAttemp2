@@ -18,6 +18,8 @@ namespace StarB3
             gestorDeProductos.AgregarStock(new Producto("Chocolate", 0.7));
             gestorDeProductos.AgregarStock(new Producto("Muffin", 1.0));
             gestorDeProductos.AgregarStock(new Producto("Galleta", 0.8));
+            gestorDeUsuarios.Registrarse("nahu", "123", TipoDeMembresia.green);
+            gestorDeUsuarios.Registrarse("admin", "0404", TipoDeMembresia.gold);
             int input = 0;
             do
             {
@@ -36,7 +38,7 @@ namespace StarB3
                         nombre = Console.ReadLine();
                         Console.WriteLine("Ingrese su contraseña:");
                         contraseña = Console.ReadLine();
-                        if(gestorDeUsuarios.InciarSesion(nombre, contraseña))
+                        if(gestorDeUsuarios.InciarSesion(nombre, contraseña))//validar si Id es admin o normal Enum
                         {
                             Carrito carritoDeUsuario = new Carrito();
                             int input2 = 0;
@@ -48,7 +50,9 @@ namespace StarB3
                                 switch (input2)
                                 {
                                     case 1:
+                                        Console.WriteLine("----------------");
                                         gestorDeProductos.ListaProductos().ForEach(x => Console.WriteLine($@"{x.Nombre} ${x.Precio}"));
+                                        Console.WriteLine("----------------");
                                         break;
                                     case 2:
                                         Console.WriteLine("Ingrese el nombre del producto que desea agregar al carrito:");
@@ -63,14 +67,22 @@ namespace StarB3
                                         carritoDeUsuario.QuitarProduto(productoQuitar);
                                         break;
                                     case 4:
-                                        Console.WriteLine($@"Subtotal: ${carritoDeUsuario.CalcularSubTotal()}");
+                                        Console.WriteLine($@"Total de la compra hasta el momento: ${carritoDeUsuario.CalcularSubTotal()}");
                                         double subTotalConDescuento = serviciosDeDescuento.AplicarDescuentos(carritoDeUsuario,gestorDeUsuarios.VerTipoMembresia(gestorDeUsuarios.DevolverUsuario(nombre)));
-                                        Console.WriteLine($@"Subtotal con descuento: ${subTotalConDescuento}");
+                                        Console.WriteLine($@"Total de descuento con membresia : ${subTotalConDescuento}");
                                         break;
                                     case 5:
-                                        //falta Finalizar Compra (venta)
+                                        carritoDeUsuario.ListaDeCarrito();
+                                        Console.WriteLine($@"Total de la compra: ${carritoDeUsuario.CalcularSubTotal()}");
+                                        subTotalConDescuento = serviciosDeDescuento.AplicarDescuentos(carritoDeUsuario, gestorDeUsuarios.VerTipoMembresia(gestorDeUsuarios.DevolverUsuario(nombre)));
+                                        Console.WriteLine($@"Total de la compra con membresia {gestorDeUsuarios.VerTipoMembresia(gestorDeUsuarios.DevolverUsuario(nombre))} : ${subTotalConDescuento}");
+                                        input2 = 6;//salir
+                                        carritoDeUsuario.VaciarCarrito();
+                                        Console.WriteLine("Gracias por comprar en STB3 ;)");
+                                        Console.ReadKey();
                                         break;
                                     default:
+                                        carritoDeUsuario.VaciarCarrito();
                                         input2 = 6;//salir
                                         break;
                                 }

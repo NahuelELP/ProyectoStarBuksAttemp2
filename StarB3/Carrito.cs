@@ -34,7 +34,9 @@ namespace StarB3
         {
             foreach (Producto x in listaDeProductosEnCarrito)
             {
-                Console.WriteLine(x.Nombre + " " + x.Precio);
+                Console.WriteLine("----------------");
+                Console.WriteLine($@"{x.Nombre}--${x.Precio}");
+                Console.WriteLine("----------------");
             }
         }
     }
