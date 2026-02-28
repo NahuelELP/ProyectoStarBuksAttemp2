@@ -13,6 +13,13 @@ namespace StarB3
         {
             this.usuarios = usuarios;
         }
+        public void RegistrarUsuariosBase()
+        {
+            Usuario admin = new Usuario("admin", "0404", TipoDeMembresia.gold, Roll.Admin);
+            Usuario usuarioBase = new Usuario("nahu", "123", TipoDeMembresia.normal, Roll.Normal);
+            usuarios.Add(usuarioBase);
+            usuarios.Add(admin);
+        }
         public bool InciarSesion(string nombre, string contraseña)
         {
             Usuario usuarioEncontrado = usuarios.Find(x => x.Nombre == nombre && x.Contraseña == contraseña);
@@ -25,11 +32,10 @@ namespace StarB3
                 return false;
             }
         }
-        public Usuario Registrarse(string nombre, string contraseña, TipoDeMembresia tipoMembresia)
+        public void Registrarse(string nombre, string contraseña, TipoDeMembresia tipoMembresia)
         {
-            Usuario UsuarioRegistrado = new Usuario(nombre, contraseña, tipoMembresia);
+            Usuario UsuarioRegistrado = new Usuario(nombre, contraseña, tipoMembresia, Roll.Normal);
             usuarios.Add(UsuarioRegistrado);
-            return UsuarioRegistrado;
         }
         public void EliminarUsuario(Usuario usuario)
         {
@@ -50,6 +56,18 @@ namespace StarB3
                 }
             }
             return TipoDeMembresia.normal;
+        }
+        public bool ValidarRollAdmin(string nombre, string contraseña)
+        {
+            Usuario usuarioEncontrado = DevolverUsuario(nombre);
+            if (usuarioEncontrado.Roll != Roll.Normal && usuarioEncontrado.Contraseña == contraseña)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

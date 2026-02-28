@@ -30,14 +30,9 @@ namespace StarB3
         {
             listaDeProductosEnCarrito.Clear();
         }
-        public void ListaDeCarrito()
+        public List<Producto> ListaDeCarrito()
         {
-            foreach (Producto x in listaDeProductosEnCarrito)
-            {
-                Console.WriteLine("----------------");
-                Console.WriteLine($@"{x.Nombre}--${x.Precio}");
-                Console.WriteLine("----------------");
-            }
+            return listaDeProductosEnCarrito;
         }
     }
 }

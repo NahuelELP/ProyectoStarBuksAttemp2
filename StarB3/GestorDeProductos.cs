@@ -19,6 +19,11 @@ namespace StarB3
             Producto productoEncontrado = products.Find(x => x.Nombre == nombre);
             return productoEncontrado;
         }
+        public Producto CrearProducto(string nombre, double precio)
+        {
+            Producto productoCreado = new Producto(nombre, precio);
+            return productoCreado;
+        }
         public void AgregarStock(Producto producto)
         {
             products.Add(producto);

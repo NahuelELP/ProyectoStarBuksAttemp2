@@ -18,8 +18,7 @@ namespace StarB3
             gestorDeProductos.AgregarStock(new Producto("Chocolate", 0.7));
             gestorDeProductos.AgregarStock(new Producto("Muffin", 1.0));
             gestorDeProductos.AgregarStock(new Producto("Galleta", 0.8));
-            gestorDeUsuarios.Registrarse("nahu", "123", TipoDeMembresia.green);
-            gestorDeUsuarios.Registrarse("admin", "0404", TipoDeMembresia.gold);
+            gestorDeUsuarios.RegistrarUsuariosBase();
             int input = 0;
             do
             {
@@ -38,59 +37,95 @@ namespace StarB3
                         nombre = Console.ReadLine();
                         Console.WriteLine("Ingrese su contraseña:");
                         contraseña = Console.ReadLine();
-                        if(gestorDeUsuarios.InciarSesion(nombre, contraseña))//validar si Id es admin o normal Enum
+                        if (gestorDeUsuarios.ValidarRollAdmin(nombre, contraseña))
                         {
-                            Carrito carritoDeUsuario = new Carrito();
-                            int input2 = 0;
+                            int input3 = 0;
                             do
                             {
-                                Console.WriteLine("1. Ver productos disponibles\n2. Agregar producto al carrito\n3. Quitar producto del carrito" +
-                                                  "\n4. Ver SubTotal\n5. Finalizar Compra\n6. Cerrar Sesion");
-                                input2 = int.Parse(Console.ReadLine());
-                                switch (input2)
+                                Console.WriteLine("1. Agregar a stock\n2. Eliminar del stock\n3. Editar producto de stock\n4. Buscar producto del stock\n5. Salir");
+                                input3 = int.Parse(Console.ReadLine());
+                                switch (input3)
                                 {
                                     case 1:
-                                        Console.WriteLine("----------------");
-                                        gestorDeProductos.ListaProductos().ForEach(x => Console.WriteLine($@"{x.Nombre} ${x.Precio}"));
-                                        Console.WriteLine("----------------");
+                                        Console.WriteLine("Nombre del producto nuevo");
+                                        Console.WriteLine("Precio del producto nuevo");
+                                        gestorDeProductos.AgregarStock();
                                         break;
                                     case 2:
-                                        Console.WriteLine("Ingrese el nombre del producto que desea agregar al carrito:");
-                                        string nombreProductoAgregar = Console.ReadLine();
-                                        Producto productoAgregar = gestorDeProductos.BuscarProductoPorNombre(nombreProductoAgregar);
-                                        carritoDeUsuario.AgregarProducto(productoAgregar);
+                                        Console.WriteLine("Nombre del producto que queres eliminar");
+                                        gestorDeProductos.EliminarStock();
                                         break;
                                     case 3:
-                                        Console.WriteLine("Ingrese el nombre del producto que desea quitar del carrito:");
-                                        string nombreProductoQuitar = Console.ReadLine();
-                                        Producto productoQuitar = gestorDeProductos.BuscarProductoPorNombre(nombreProductoQuitar);
-                                        carritoDeUsuario.QuitarProduto(productoQuitar);
+                                        Console.WriteLine("Nombre del producto que queres editar");
+                                        gestorDeProductos.EditarProductoStock();
                                         break;
                                     case 4:
-                                        Console.WriteLine($@"Total de la compra hasta el momento: ${carritoDeUsuario.CalcularSubTotal()}");
-                                        double subTotalConDescuento = serviciosDeDescuento.AplicarDescuentos(carritoDeUsuario,gestorDeUsuarios.VerTipoMembresia(gestorDeUsuarios.DevolverUsuario(nombre)));
-                                        Console.WriteLine($@"Total de descuento con membresia : ${subTotalConDescuento}");
-                                        break;
-                                    case 5:
-                                        carritoDeUsuario.ListaDeCarrito();
-                                        Console.WriteLine($@"Total de la compra: ${carritoDeUsuario.CalcularSubTotal()}");
-                                        subTotalConDescuento = serviciosDeDescuento.AplicarDescuentos(carritoDeUsuario, gestorDeUsuarios.VerTipoMembresia(gestorDeUsuarios.DevolverUsuario(nombre)));
-                                        Console.WriteLine($@"Total de la compra con membresia {gestorDeUsuarios.VerTipoMembresia(gestorDeUsuarios.DevolverUsuario(nombre))} : ${subTotalConDescuento}");
-                                        input2 = 6;//salir
-                                        carritoDeUsuario.VaciarCarrito();
-                                        Console.WriteLine("Gracias por comprar en STB3 ;)");
-                                        Console.ReadKey();
+                                        Console.WriteLine("Nombre del producto que queres buscar");
+                                        gestorDeProductos.BuscarProductoPorNombre();
                                         break;
                                     default:
-                                        carritoDeUsuario.VaciarCarrito();
-                                        input2 = 6;//salir
                                         break;
                                 }
-                            } while (input2 >= 1 && input2 <=5);
+                            } while (input3 >= 1 && input3 <= 5);
                         }
                         else
                         {
-                            Console.WriteLine("Usuario o contraseña incorrectos");
+                            if (gestorDeUsuarios.InciarSesion(nombre, contraseña))
+                            {
+                                Carrito carritoDeUsuario = new Carrito();
+                                int input2 = 0;
+                                do
+                                {
+                                    Console.WriteLine("1. Ver productos disponibles\n2. Agregar producto al carrito\n3. Quitar producto del carrito" +
+                                                      "\n4. Ver SubTotal\n5. Finalizar Compra\n6. Cerrar Sesion");
+                                    input2 = int.Parse(Console.ReadLine());
+                                    switch (input2)
+                                    {
+                                        case 1:
+                                            Console.WriteLine("----------------");
+                                            gestorDeProductos.ListaProductos().ForEach(x => Console.WriteLine($@"{x.Nombre} ${x.Precio}"));
+                                            Console.WriteLine("----------------");
+                                            break;
+                                        case 2:
+                                            Console.WriteLine("Ingrese el nombre del producto que desea agregar al carrito:");
+                                            string nombreProductoAgregar = Console.ReadLine();
+                                            Producto productoAgregar = gestorDeProductos.BuscarProductoPorNombre(nombreProductoAgregar);
+                                            carritoDeUsuario.AgregarProducto(productoAgregar);
+                                            break;
+                                        case 3:
+                                            Console.WriteLine("Ingrese el nombre del producto que desea quitar del carrito:");
+                                            string nombreProductoQuitar = Console.ReadLine();
+                                            Producto productoQuitar = gestorDeProductos.BuscarProductoPorNombre(nombreProductoQuitar);
+                                            carritoDeUsuario.QuitarProduto(productoQuitar);
+                                            break;
+                                        case 4:
+                                            Console.WriteLine($@"Total de la compra hasta el momento: ${carritoDeUsuario.CalcularSubTotal()}");
+                                            double subTotalConDescuento = serviciosDeDescuento.AplicarDescuentos(carritoDeUsuario, gestorDeUsuarios.VerTipoMembresia(gestorDeUsuarios.DevolverUsuario(nombre)));
+                                            Console.WriteLine($@"Total de descuento con membresia : ${subTotalConDescuento}");
+                                            break;
+                                        case 5:
+                                            Console.WriteLine("----------------");
+                                            gestorDeProductos.ListaProductos().ForEach(x => Console.WriteLine($@"{x.Nombre} ${x.Precio}"));
+                                            Console.WriteLine("----------------");
+                                            Console.WriteLine($@"Total de la compra: ${carritoDeUsuario.CalcularSubTotal()}");
+                                            subTotalConDescuento = serviciosDeDescuento.AplicarDescuentos(carritoDeUsuario, gestorDeUsuarios.VerTipoMembresia(gestorDeUsuarios.DevolverUsuario(nombre)));
+                                            Console.WriteLine($@"Total de la compra con membresia {gestorDeUsuarios.VerTipoMembresia(gestorDeUsuarios.DevolverUsuario(nombre))} : ${subTotalConDescuento}");
+                                            input2 = 6;//salir
+                                            carritoDeUsuario.VaciarCarrito();
+                                            Console.WriteLine("Gracias por comprar en STB3 ;)");
+                                            Console.ReadKey();
+                                            break;
+                                        default:
+                                            carritoDeUsuario.VaciarCarrito();
+                                            input2 = 6;//salir
+                                            break;
+                                    }
+                                } while (input2 >= 1 && input2 <= 5);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Usuario o contraseña incorrectos");
+                            }
                         }
                         break;
                     case 2:

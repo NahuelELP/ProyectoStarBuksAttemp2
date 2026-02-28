@@ -8,10 +8,9 @@ namespace StarB3
 {
     internal class Usuario
     {
-        public int Roll { get; } //admin 1 normal 2
         public string Nombre { get; private set; }
         public string Contraseña { get; }
-
+        public Roll Roll { get; }
         public TipoDeMembresia TipoDeMembresia { get; }
 
         public Usuario(string nombre, string contraseña, TipoDeMembresia tipoDeMembresia)
@@ -20,7 +19,7 @@ namespace StarB3
             Contraseña = contraseña;
             TipoDeMembresia = tipoDeMembresia;
         }
-        public Usuario(string nombre, string contraseña, TipoDeMembresia tipoDeMembresia, int roll)//Agregar Id
+        public Usuario(string nombre, string contraseña, TipoDeMembresia tipoDeMembresia, Roll roll)//Agregar Id
         {
             Nombre = nombre;
             Contraseña = contraseña;
