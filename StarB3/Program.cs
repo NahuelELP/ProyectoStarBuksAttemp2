@@ -47,26 +47,48 @@ namespace StarB3
                                 switch (input3)
                                 {
                                     case 1:
-                                        Console.WriteLine("Nombre del producto nuevo");
-                                        Console.WriteLine("Precio del producto nuevo");
-                                        gestorDeProductos.AgregarStock();
+                                        Console.WriteLine("Nombre del producto que queres agregar");
+                                        string nombreProductoNuevo = Console.ReadLine();
+                                        Console.WriteLine("Precio del producto que queres agregar");
+                                        double precioProductoNuevo = double.Parse(Console.ReadLine());
+                                        gestorDeProductos.AgregarStock(gestorDeProductos.CrearProducto(nombreProductoNuevo, precioProductoNuevo));
                                         break;
                                     case 2:
                                         Console.WriteLine("Nombre del producto que queres eliminar");
-                                        gestorDeProductos.EliminarStock();
+                                        string nombreProductoEliminar = Console.ReadLine();
+                                        gestorDeProductos.EliminarStock(gestorDeProductos.BuscarProductoPorNombre(nombreProductoEliminar));
                                         break;
                                     case 3:
                                         Console.WriteLine("Nombre del producto que queres editar");
-                                        gestorDeProductos.EditarProductoStock();
+                                        string nombreProductoEditar = Console.ReadLine();
+                                        if (gestorDeProductos.BuscarProductoPorNombre(nombreProductoEditar) != null)
+                                        {
+                                            Console.WriteLine("Precio del producto que queres editar");
+                                            double precioProductoEditar = double.Parse(Console.ReadLine());
+                                            gestorDeProductos.EditarProductoStock(gestorDeProductos.BuscarProductoPorNombre(nombreProductoEditar), precioProductoEditar);
+                                        }
+                                        else                                        {
+                                            Console.WriteLine("El producto no existe");
+                                        }
                                         break;
                                     case 4:
                                         Console.WriteLine("Nombre del producto que queres buscar");
-                                        gestorDeProductos.BuscarProductoPorNombre();
+                                        string nombreBuscarProducto = Console.ReadLine();
+                                        Producto encontrado = gestorDeProductos.BuscarProductoPorNombre(nombreBuscarProducto);
+                                        if (encontrado != null)
+                                        {
+                                            Console.WriteLine($@"Producto encontrado: {encontrado.Nombre} ${encontrado.Precio}");
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("El producto no existe");
+                                        }
                                         break;
                                     default:
+                                        input3 = 5;//salir
                                         break;
                                 }
-                            } while (input3 >= 1 && input3 <= 5);
+                            } while (input3 >= 1 && input3 <= 4);
                         }
                         else
                         {
