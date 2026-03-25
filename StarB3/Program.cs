@@ -132,6 +132,7 @@ namespace StarB3
                                             Console.WriteLine($@"Total de la compra: ${carritoDeUsuario.CalcularSubTotal()}");
                                             subTotalConDescuento = serviciosDeDescuento.AplicarDescuentos(carritoDeUsuario, gestorDeUsuarios.VerTipoMembresia(gestorDeUsuarios.DevolverUsuario(nombre)));
                                             Console.WriteLine($@"Total de la compra con membresia {gestorDeUsuarios.VerTipoMembresia(gestorDeUsuarios.DevolverUsuario(nombre))} : ${subTotalConDescuento}");
+                                            Console.WriteLine($@"Total de la compra con membresia {gestorDeUsuarios.DevolverUsuario(nombre).TipoDeMembresia} : ${subTotalConDescuento}");
                                             input2 = 6;//salir
                                             carritoDeUsuario.VaciarCarrito();
                                             Console.WriteLine("Gracias por comprar en STB3 ;)");

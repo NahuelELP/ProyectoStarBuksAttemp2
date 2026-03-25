@@ -1,0 +1,4 @@
+Cafe;$2.5
+Te;$1.8
+Brownie;$3
+Galleta;$1.2

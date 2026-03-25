@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starbuks2", "Starbuks2\Star
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarB3", "StarB3\StarB3.csproj", "{89170FA1-1A26-4B5E-A0AD-B581ECE62A55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fase3Archivos", "Fase3Archivos\Fase3Archivos.csproj", "{A053E4D7-4461-4962-BB82-70E2667FBD32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{89170FA1-1A26-4B5E-A0AD-B581ECE62A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89170FA1-1A26-4B5E-A0AD-B581ECE62A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89170FA1-1A26-4B5E-A0AD-B581ECE62A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A053E4D7-4461-4962-BB82-70E2667FBD32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A053E4D7-4461-4962-BB82-70E2667FBD32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A053E4D7-4461-4962-BB82-70E2667FBD32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A053E4D7-4461-4962-BB82-70E2667FBD32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
