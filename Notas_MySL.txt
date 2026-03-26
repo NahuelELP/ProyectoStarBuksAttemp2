@@ -1,0 +1,105 @@
+RDBMS = relation data base managment sistem(nuestra base de datos)
+CRUD = Create , Read, Update, Deleted
+Columna= Hace referncia al valor ke se esta guardando
+fila
+Id= Primary key
+Id= Foreing key idPrimaria ke aparace en otra tabla 
+
+Creacion de BDS
+use "nombre de la basededatos";
+
+create table "nombre de la tabla"(
+	id int,
+    tipo varchar(255),
+    estado varchar(255),
+    PRIMARY KEY (id)
+);
+
+--insertar cosas a la tabla
+insert into animales (tipo, estado)value("chanchito","feliz");
+
+--alterar cosas de la tabla
+alter table animales modify column id int auto_increment;
+
+--seleccion de partes de la tabla o mismo la tabla
+select * from animales;
+select * from animales where id = 1;
+select * from animales where id = 1 and estado = "feliz";
+
+-- actualizar
+update animales set estado = "feliz" where id = 3;
+
+alter table usuario add column email varchar(100) not null;
+
+SELECT * FROM usuario WHERE edad > 21;
+SELECT * FROM usuario WHERE edad > 20 and email = "nahuellassos90@gmail.com";
+SELECT * FROM usuario WHERE  edad > 24 or email = "lau@gmail.com";
+SELECT * FROM usuario WHERE email != "nahuellassos90@gmail.com";
+SELECT * FROM usuario WHERE edad between 20 and 23;
+-- %% se usa al principio, al final o a ambos lados
+SELECT * FROM usuario WHERE email like "nahuel%";
+SELECT * FROM usuario order by edad asc;
+SELECT * FROM usuario order by edad desc;
+
+SELECT max(edad) as mayor from usuario;
+SELECT min(edad) as menor from usuario;
+
+Select id, name from usuario;
+Select id, name as nombre from usuario;
+
+A LEFT JOIN B
+"Quiero todo A y lo que coincida de B"
+A RIGHT JOIN B
+"Quiero todo B y lo que coincida de A"
+
+INNER JOIN
+--Solo devuelve las coincidencias
+SELECT clientes.nombre, pedidos.producto
+FROM clientes
+INNER JOIN pedidos
+ON clientes.id = pedidos.cliente_id;
+
+CROSS JOIN
+-- Convina cada fila de la tabla de A con cada fila de la tabla de B
+--Ej: tener tabla de colores y una tabla de talles, asi se tiene todos
+los talles de color 
+
+SELECT *
+FROM colores
+CROSS JOIN tallas;
+
+GROUP BY
+-- agrupa filas ke tengan el mismo valor en una columna
+SELECT producto, COUNT(*)
+FROM ventas
+GROUP BY producto;
+cafe, 3
+cafe, 5
+té, 4
+té, 2
+-
+cafe , 2
+te, 2
+
+SELECT vendedor, SUM(monto)
+FROM ventas
+GROUP BY vendedor;
+
+selecciona vendedor y suma el monto de la misma tabla de la tabla ventas
+
+CREATE SCHEMA =a CREATE databases
+
+UNIQUE_CHECKS=0
+Desactiva validaciones de valores únicos temporalmente
+Para que no falle si creas cosas en cierto orden.
+
+FOREIGN_KEY_CHECKS=0
+Desactiva validaciones de claves foráneas
+creas pedidos antes que usuarios
+normalmente fallaría
+con esto → no falla
+
+INDEX que es?
+Es como un índice de un libro
+
+Te permite encontrar datos más rápido.
