@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
         }
         public void GetData()
         {
-            string connectionString = "server=localhost;uid=root;pwd=N.l1234567;database=holamundo;";
+            string connectionString = "server=localhost;uid=appuser;pwd=1234;database=holamundo;";
             MySqlConnection connection = new MySqlConnection(connectionString);
             connection.Open();
             string query = "SELECT * FROM usuarios";
