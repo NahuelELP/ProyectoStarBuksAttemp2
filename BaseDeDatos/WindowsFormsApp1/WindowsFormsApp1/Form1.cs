@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +22,23 @@ namespace WindowsFormsApp1
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GetData();
+        }
+        public void GetData()
+        {
+            string connectionString = "server=localhost;uid=root;pwd=N.l1234567;database=holamundo;";
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            connection.Open();
+            string query = "SELECT * FROM usuarios";
+            MySqlCommand command = new MySqlCommand(query, connection);
+            MySqlDataReader reader = command.ExecuteReader();
+            DataTable db = new DataTable();
+            db.Load(reader);
+            dataGridView1.DataSource = db;
         }
     }
 }
