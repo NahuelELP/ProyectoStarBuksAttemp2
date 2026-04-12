@@ -1,0 +1,6 @@
+@ProyectoDbCrud_HostAddress = http://localhost:5207
+
+GET {{ProyectoDbCrud_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
