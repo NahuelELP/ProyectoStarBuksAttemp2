@@ -1,0 +1,29 @@
+﻿@model List<Mvc_curso.Domain.Entities.Student>
+<h1>Students</h1>
+<a asp-controller="Student" asp-action="Create" class="btn btn-primary mb-3">Crear estudiante</a>
+<table id="dt2" class="table table-striped">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Full Name</th>
+			<th>Age</th>
+			<th>Country</th>
+			<th>ACTIONS</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var students in Model)
+		{
+			<tr>
+				<td>@students.Id</td>
+				<td>@students.FullName</td>
+				<td>@students.Age</td>
+				<td>@students.Country</td>
+				<td>
+					<a class="btn btn-Info"><i class="bg-info bi-pencil"></i>></a>
+					<a class="btn btn-Danger"><i class="bg-info bi-drash"></i>></a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

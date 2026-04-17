@@ -12,8 +12,12 @@ namespace Mvc_curso.Web.Controllers
         }
         public IActionResult Index()
         {
+            var students = db.Students.ToList();
+            return View(students);
+        }
+        public IActionResult Create()
+        {
             return View();
         }
-
     }
 }

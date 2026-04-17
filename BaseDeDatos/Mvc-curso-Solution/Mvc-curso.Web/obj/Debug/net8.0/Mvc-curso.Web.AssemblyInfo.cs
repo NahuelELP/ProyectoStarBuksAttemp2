@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mvc-curso.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edb1c8593a2cfb8decc4a35cd06f4a6e579d37d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+851b294185343ce99cbf95c05cf69f363935b208")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mvc-curso.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mvc-curso.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
