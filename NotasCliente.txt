@@ -1,0 +1,13 @@
+-Notas Proyecto sistema de ventas-
+1-Creacion de BD 
+	-Tablas
+2-Creacion de proy VS
+	-Capas
+		-Presentation
+			-AppSettings.Json
+				-Origen de nuestra bd y conexion
+		-Repositoriy (BD)
+		-Service
+	-Referencias entre soluciones
+		-Service con Reporsitory		
+		-Presentation con Service
