@@ -1,13 +1,30 @@
 -Notas Proyecto sistema de ventas-
 1-Creacion de BD 
 	-Tablas
+	
 2-Creacion de proy VS
 	-Capas
-		-Presentation
+		-Presentation:
 			-AppSettings.Json
 				-Origen de nuestra bd y conexion
-		-Repositoriy (BD)
-		-Service
+		-Program.cs
+			-Agregado de metodo lambda IHostBuilder CrearHostBuilder().ConfigureAppConfiguration (video)1:14:00
+			-Crear Variable Host para incializar el metodo hostBuilder
+		-Cambiar incio de proyecto a presentacion
+		-Cambiar la accion de compilacion a contenido y Copiar si es posteriro, referencia a los cambios
+		-Limpiar y recompilar el proyecto de presentacion para agreagar el archivo appsettings
+		-Dependencias
+			-PacketesNug
+				-Microsoft.ext.Hosting(Sirve para ke el programa pueda leer el archivo json)
+		-Repositoriy (BD):
+			-Agreagar pakete nug
+				-Micros.Data.SklCliente
+				-Micros.Extension.configuration
+			-Nueva carpeta DB
+				-Clase conexion 
+					-Dos variables una para guardar la cadena de conexion Y otra para acceder a el archivo appsettings
+		-Service:
 	-Referencias entre soluciones
 		-Service con Reporsitory		
 		-Presentation con Service
+ 
