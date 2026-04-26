@@ -1,0 +1,54 @@
+Carpetas: 
+
+Models → clases como Usuario, Producto, Venta
+Data → AppDbContext
+Controllers → endpoints de la API
+
+public class AppDbContext : DbContext
+	Esta clase será el puente entre mi API y la base de datos.
+
+public DbSet<Usuario> Usuarios { get; set; }
+	Voy a tener una tabla Usuarios.
+
+var builder = WebApplication.CreateBuilder(args);
+
+	Se encarga de:
+	Configuración
+	Servicios
+	Dependencias
+	
+Add-Migration InitialCreate
+	EF, revisá mis modelos y prepará la creación de la base de datos.
+Basicamente preaparamaos una miragracion donde se van a crear tablas con sus respectivas propiedades
+
+
+
+Usé IActionResult
+
+Cuando lo importante es la respuesta HTTP más que devolver un tipo concreto.
+
+Ejemplo:
+
+public IActionResult EliminarUsuario(int id)
+------------------------------------------------------------------------------
+
+Usé ActionResult<Usuario> o ActionResult<IEnumerable<Usuario>>
+
+Cuando el endpoint normalmente devuelve datos.
+
+Ejemplo:
+
+public ActionResult<Usuario> GetPorId(int id)
+
+-----------------------------------------------------------------
+[FromBody] Usuario usuario
+
+👉 es como decir:
+
+“creame un objeto Usuario con los datos que vienen en el JSON”
+Para que entiendas el panorama:
+
+[FromBody] → body (JSON)
+[FromRoute] → URL (/usuarios/1)
+[FromQuery] → query string (?nombre=juan)
+[FromHeader] → headers

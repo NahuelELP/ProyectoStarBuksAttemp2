@@ -1,0 +1,16 @@
+Entendi:
+Instalación de paquetes nugets:
+	Microsoft.tools
+	Microsoft.SqlServer
+	Microsoft.core
+Carpeta modelo
+	clase Entidad "TodoItem"
+Carpeta Context
+	clase appdbcontext //conexcion a la base de datos
+Modificar el archivo appsetigns para agregar la conexion a la bd
+modificiar el archivo program para añadir los servicios, osea la bd, al contenedor
+Abrir la consola nuget realizar la primera migracion con "Add-Migration "AddMigrationTodoItems(<--Nombre)"
+Actualizar la BD "Update-Database"--> actualiza la bd de SQL
+Scafolding=Conjunto de herramientas para realizar de fomra automatica codigo para interactuar con bd, realizando un CRUD
+------------------------------------------------
+No entendí:

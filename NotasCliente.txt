@@ -7,9 +7,9 @@
 		-Presentation:
 			-AppSettings.Json
 				-Origen de nuestra bd y conexion
-		-Program.cs
-			-Agregado de metodo lambda IHostBuilder CrearHostBuilder().ConfigureAppConfiguration (video)1:14:00
-			-Crear Variable Host para incializar el metodo hostBuilder
+			-Program.cs
+				-Agregado de metodo lambda IHostBuilder CrearHostBuilder().ConfigureAppConfiguration (video)1:14:00
+				-Crear Variable Host para incializar el metodo hostBuilder
 		-Cambiar incio de proyecto a presentacion
 		-Cambiar la accion de compilacion a contenido y Copiar si es posteriro, referencia a los cambios
 		-Limpiar y recompilar el proyecto de presentacion para agreagar el archivo appsettings
