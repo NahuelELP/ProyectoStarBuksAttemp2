@@ -1,0 +1,12 @@
+Realice hasta ahora
+1-Carpetas
+	-controller
+		-contiene CRUD y recibe peticiones HTTP y usa el DbContext para trabajar con la BD.
+	-data
+		-Conexion principal con bd
+	-Models
+		-entidades del proyecto(Usuario)
+	-Migrations
+		-guada el historial de los cambios o creaciones a la bd
+2-cambiar configuracion de appsettings
+	-Contiene la cadena para la conexion a la bd 
