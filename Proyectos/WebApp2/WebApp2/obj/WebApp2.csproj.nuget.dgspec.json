@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nahue\\Desktop\\ProyectoStarBuksAttemp2\\Proyectos\\WebApp2\\WebApp2\\WebApp2.csproj": {}
+    "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Proyectos\\WebApp2\\WebApp2\\WebApp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nahue\\Desktop\\ProyectoStarBuksAttemp2\\Proyectos\\WebApp2\\WebApp2\\WebApp2.csproj": {
+    "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Proyectos\\WebApp2\\WebApp2\\WebApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nahue\\Desktop\\ProyectoStarBuksAttemp2\\Proyectos\\WebApp2\\WebApp2\\WebApp2.csproj",
+        "projectUniqueName": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Proyectos\\WebApp2\\WebApp2\\WebApp2.csproj",
         "projectName": "WebApp2",
-        "projectPath": "C:\\Users\\nahue\\Desktop\\ProyectoStarBuksAttemp2\\Proyectos\\WebApp2\\WebApp2\\WebApp2.csproj",
+        "projectPath": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Proyectos\\WebApp2\\WebApp2\\WebApp2.csproj",
         "packagesPath": "C:\\Users\\nahue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nahue\\Desktop\\ProyectoStarBuksAttemp2\\Proyectos\\WebApp2\\WebApp2\\obj\\",
+        "outputPath": "C:\\Users\\nahue\\Desktop\\ProyectoSB\\Intento2\\ProyectoSB-2\\Proyectos\\WebApp2\\WebApp2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

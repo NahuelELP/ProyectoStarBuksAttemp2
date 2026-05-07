@@ -105,7 +105,6 @@ namespace WebApp.Controllers
                     subtotal = d.Cantidad * d.PrecioUnitario
                 })
             };
-
             return Ok(ventaResponse);
         }
     }
