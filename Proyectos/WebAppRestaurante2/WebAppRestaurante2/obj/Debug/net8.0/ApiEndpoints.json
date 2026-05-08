@@ -8,7 +8,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "Id",
         "Type": "System.Int32",
         "IsRequired": true
       },
@@ -65,7 +65,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "Id",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -101,7 +101,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "Id",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -132,7 +132,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "WebAppRestaurante2.Models.Pedido",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "WebAppRestaurante2.Controllers.PedidoController",
@@ -226,7 +236,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "Id",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -262,7 +272,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "Id",
         "Type": "System.Int32",
         "IsRequired": true
       }

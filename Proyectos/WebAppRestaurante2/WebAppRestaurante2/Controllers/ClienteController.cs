@@ -23,9 +23,9 @@ namespace WebAppRestaurante2.Controllers
             return Ok(clientes);
         }
         [HttpGet("ObtenerPorId/{Id}")]
-        public async Task<ActionResult<Cliente>> GetById(int id)
+        public async Task<ActionResult<Cliente>> GetById(int Id)
         {
-            var clienteEncontrado = await _context.Clientes.FindAsync(id);
+            var clienteEncontrado = await _context.Clientes.FindAsync(Id);
             if (clienteEncontrado == null)
             {
                 return NotFound();
@@ -40,9 +40,9 @@ namespace WebAppRestaurante2.Controllers
             return CreatedAtAction(nameof(GetById), new { id = cliente.Id }, cliente);
         }
         [HttpPut("Actualizar/{Id}")]
-        public async Task<ActionResult<Cliente>> Actualizar(int id, Cliente cliente)
+        public async Task<ActionResult<Cliente>> Actualizar(int Id, Cliente cliente)
         {
-            var clienteEncontrado = await _context.Clientes.FindAsync(id);
+            var clienteEncontrado = await _context.Clientes.FindAsync(Id);
             if (clienteEncontrado == null)
             {
                 return NotFound();
@@ -53,9 +53,9 @@ namespace WebAppRestaurante2.Controllers
             return Ok(clienteEncontrado);
         }
         [HttpDelete("Eliminar/{Id}")]
-        public async Task<IActionResult> Eliminar(int id)
+        public async Task<IActionResult> Eliminar(int Id)
         {
-            var clienteEncontrado = await _context.Clientes.FindAsync(id);
+            var clienteEncontrado = await _context.Clientes.FindAsync(Id);
             if (clienteEncontrado == null)
             {
                 return NotFound();

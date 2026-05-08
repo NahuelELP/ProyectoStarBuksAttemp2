@@ -17,7 +17,7 @@ namespace WebAppRestaurante2.Controllers
             _context = context;
         }
         [HttpPost]
-        public async Task<ActionResult>CrearPedido(PedidoRequest pedidoRequest)
+        public async Task<ActionResult<Pedido>>CrearPedido(PedidoRequest pedidoRequest)
         {
             //Buscamos si en la rekuest se proporcionó un cliente válido
             var cliente = await _context.Clientes.FindAsync(pedidoRequest.ClienteId);
@@ -67,7 +67,7 @@ namespace WebAppRestaurante2.Controllers
             pedido.Total = totalPedido;
             _context.Pedidos.Add(pedido);
             await _context.SaveChangesAsync();
-            return Ok();
+            return Ok(pedido);
         }
         [HttpGet("{id}")]
         public async Task<ActionResult<PedidoResponse>> GetPedido(int id)

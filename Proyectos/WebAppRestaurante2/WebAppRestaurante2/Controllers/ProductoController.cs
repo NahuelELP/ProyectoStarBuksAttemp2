@@ -22,9 +22,9 @@ namespace WebAppRestaurante2.Controllers
             return Ok(productos);
         }
         [HttpGet("ObtenerPorId/{Id}")]
-        public async Task<ActionResult<Producto>> GetById(int id)
+        public async Task<ActionResult<Producto>> GetById(int Id)
         {
-            var productoEncontrado = await _context.Productos.FindAsync(id);
+            var productoEncontrado = await _context.Productos.FindAsync(Id);
             if (productoEncontrado == null)
             {
                 return NotFound();
@@ -52,9 +52,9 @@ namespace WebAppRestaurante2.Controllers
             return Ok(productoEncontrado);
         }
         [HttpDelete("Eliminar/{Id}")]
-        public async Task<IActionResult> Eliminar(int id)
+        public async Task<IActionResult> Eliminar(int Id)
         {
-            var productoEncontrado = await _context.Productos.FindAsync(id);
+            var productoEncontrado = await _context.Productos.FindAsync(Id);
             if (productoEncontrado == null)
             {
                 return NotFound();
