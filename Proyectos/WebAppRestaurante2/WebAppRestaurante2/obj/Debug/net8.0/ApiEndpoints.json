@@ -121,7 +121,7 @@
   {
     "ContainingType": "WebAppRestaurante2.Controllers.PedidoController",
     "Method": "CrearPedido",
-    "RelativePath": "api/Pedido",
+    "RelativePath": "api/Pedido/CrearPedido",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -147,7 +147,7 @@
   {
     "ContainingType": "WebAppRestaurante2.Controllers.PedidoController",
     "Method": "GetPedido",
-    "RelativePath": "api/Pedido/{id}",
+    "RelativePath": "api/Pedido/ObtenerPedido/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

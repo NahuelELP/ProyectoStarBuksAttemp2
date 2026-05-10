@@ -204,7 +204,7 @@
         }
       }
     },
-    "/api/Pedido": {
+    "/api/Pedido/CrearPedido": {
       "post": {
         "tags": [
           "Pedido"
@@ -252,7 +252,7 @@
         }
       }
     },
-    "/api/Pedido/{id}": {
+    "/api/Pedido/ObtenerPedido/{id}": {
       "get": {
         "tags": [
           "Pedido"

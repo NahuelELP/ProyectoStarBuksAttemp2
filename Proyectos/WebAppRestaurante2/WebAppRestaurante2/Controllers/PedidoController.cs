@@ -16,8 +16,8 @@ namespace WebAppRestaurante2.Controllers
         {
             _context = context;
         }
-        [HttpPost]
-        public async Task<ActionResult<Pedido>>CrearPedido(PedidoRequest pedidoRequest)
+        [HttpPost("CrearPedido")]
+        public async Task<ActionResult<PedidoResponse>>CrearPedido(PedidoRequest pedidoRequest)
         {
             //Buscamos si en la rekuest se proporcionó un cliente válido
             var cliente = await _context.Clientes.FindAsync(pedidoRequest.ClienteId);
@@ -27,12 +27,12 @@ namespace WebAppRestaurante2.Controllers
                 return NotFound("Cliente no encontrado");
             }
             //se valida si los detalles del pedidos no son nulos o vacios
-            if(pedidoRequest.DetallesPedido ==null || pedidoRequest.DetallesPedido.Count == 0)
+            if(pedidoRequest.DetallesPedidoRequest == null || pedidoRequest.DetallesPedidoRequest.Count == 0)
             {
                 return BadRequest("Detalles del pedido no proporcionados");
             }
             //se crea un nuevo pedido
-            var pedido = new Pedido
+            var pedidoResponse = new Pedido
             {
                 ClienteId = pedidoRequest.ClienteId,
                 Fecha = DateTime.Now,
@@ -41,35 +41,35 @@ namespace WebAppRestaurante2.Controllers
             };
             decimal totalPedido = 0;
             //se valida cada detalle del pedido
-            foreach(var detalles in pedidoRequest.DetallesPedido)
+            foreach(var detallesRequest in pedidoRequest.DetallesPedidoRequest)
             {
                 //validar si el producto existe
-                var producto = await _context.Productos.FindAsync(detalles.ProductoId);
+                var producto = await _context.Productos.FindAsync(detallesRequest.ProductoId);
                 if(producto == null)
                 {
-                    return NotFound($"Producto con ID {detalles.ProductoId} no encontrado");
+                    return NotFound($"Producto con ID {detallesRequest.ProductoId} no encontrado");
                 }
                 //validar la cantidad del producto
-                if (detalles.Cantidad <= 0)
+                if (detallesRequest.Cantidad <= 0)
                 {
                     return BadRequest("La cantidad debe ser mayor a cero");
                 }
                 //crear un nuevo detalle del pedido
                 var detallePedido = new DetallePedido
                 {
-                    ProductoId = detalles.ProductoId,
-                    Cantidad = detalles.Cantidad,
+                    ProductoId = detallesRequest.ProductoId,
+                    Cantidad = detallesRequest.Cantidad,
                     PrecioUnitario = producto.Precio
                 };
                 totalPedido += detallePedido.Cantidad * detallePedido.PrecioUnitario;
-                pedido.Detalles.Add(detallePedido);
+                pedidoResponse.Detalles.Add(detallePedido);
             }
-            pedido.Total = totalPedido;
-            _context.Pedidos.Add(pedido);
+            pedidoResponse.Total = totalPedido;
+            _context.Pedidos.Add(pedidoResponse);
             await _context.SaveChangesAsync();
-            return Ok(pedido);
+            return Ok(pedidoResponse);
         }
-        [HttpGet("{id}")]
+        [HttpGet("ObtenerPedido/{id}")]
         public async Task<ActionResult<PedidoResponse>> GetPedido(int id)
         {
             var pedido = await _context.Pedidos
