@@ -134,7 +134,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "WebAppRestaurante2.Models.Pedido",
+        "Type": "WebAppRestaurante2.DTO.PedidoResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
