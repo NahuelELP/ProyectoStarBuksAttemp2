@@ -25,17 +25,64 @@ namespace WebAppRestaurante2.Controllers
         //6. Guarda Pedido en la BD
         //7. Arma un PedidoResponse
         //8. Devuelve PedidoResponse  
-        public async Task<ActionResult<PedidoResponse>>CrearPedido(PedidoRequest pedidoRequest)
+        public async Task<ActionResult<PedidoResponse>> CrearPedido(PedidoRequest pedidoRequest)
         {
             //Buscamos si en la request se proporcionó un cliente válido
             //Validamos si existe el cliente
             //se valida si los detalles del pedidos no son nulos o vacios
             //se crea un nuevo pedido
-
+            var ClienteEncontrado = await _context.Clientes.FindAsync(pedidoRequest.ClienteId);
+            if (ClienteEncontrado == null)
+            {
+                return NotFound("Cliente no encontrado");
+            }
+            var nuevoPedido = new Pedido
+            {
+                ClienteId = pedidoRequest.ClienteId,
+                Fecha = DateTime.Now,
+                Total = 0m,
+                Detalles = new List<DetallePedido>()
+            };
             //se valida cada detalle del pedido
-                //validar si el producto existe
-                //validar la cantidad del producto
-                //crear un nuevo detalle del pedido
+            //validar si el producto existe
+            //validar la cantidad del producto
+            //crear un nuevo detalle del pedido
+            decimal totalPedido = 0;
+            var detalleResponse = new List<DetallePedidoResponse>();
+            foreach (var detalle in pedidoRequest.DetallesPedidoRequest)
+            {
+                if(detalle.Cantidad <= 0)
+                {
+                    return BadRequest("La cantidad debe ser mayor a cero");
+                }
+                var nuevoDetallePedido = new DetallePedido
+                {
+                    ProductoId = detalle.ProductoId,
+                    Cantidad = detalle.Cantidad,
+                    PrecioUnitario = Producto.
+                };
+                nuevoPedido.Detalles.Add(nuevoDetallePedido);
+                totalPedido += nuevoDetallePedido.Cantidad * nuevoDetallePedido.PrecioUnitario;
+                detalleResponse.Add(new DetallePedidoResponse
+                {
+                    ProductoId = nuevoDetallePedido.ProductoId,
+                    Cantidad = nuevoDetallePedido.Cantidad,
+                    PrecioUnitario = nuevoDetallePedido.PrecioUnitario
+                });
+            }
+            nuevoPedido.Total = totalPedido;
+            _context.Pedidos.Add(nuevoPedido);
+            await _context.SaveChangesAsync();
+            var pedidoResponse = new PedidoResponse
+            {
+                Id = nuevoPedido.Id,
+                ClienteId = nuevoPedido.ClienteId,
+                NombreCliente = ClienteEncontrado.Nombre,
+                Fecha = nuevoPedido.Fecha,
+                Total = nuevoPedido.Total,
+                DetallesPedido = detalleResponse
+            };
+            return Ok(pedidoResponse);
         }
         [HttpGet("ObtenerPedido/{id}")]
         public async Task<ActionResult<PedidoResponse>> GetPedido(int id)
