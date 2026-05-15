@@ -31,10 +31,14 @@ namespace WebAppRestaurante2.Controllers
             //Validamos si existe el cliente
             //se valida si los detalles del pedidos no son nulos o vacios
             //se crea un nuevo pedido
-            var ClienteEncontrado = await _context.Clientes.FindAsync(pedidoRequest.ClienteId);
-            if (ClienteEncontrado == null)
+            var clienteEncontrado = await _context.Clientes.FindAsync(pedidoRequest.ClienteId);
+            if (clienteEncontrado == null)
             {
                 return NotFound("Cliente no encontrado");
+            }
+            if (pedidoRequest.DetallesPedidoRequest == null || pedidoRequest.DetallesPedidoRequest.Count == 0)
+            {
+                return BadRequest("Detalles del pedido no proporcionados");
             }
             var nuevoPedido = new Pedido
             {
@@ -50,22 +54,28 @@ namespace WebAppRestaurante2.Controllers
             decimal totalPedido = 0;
             var detalleResponse = new List<DetallePedidoResponse>();
             foreach (var detalle in pedidoRequest.DetallesPedidoRequest)
-            {
-                if(detalle.Cantidad <= 0)
+            {   
+                var productoEncontrado = await _context.Productos.FindAsync(detalle.ProductoId);
+                if (productoEncontrado == null)
                 {
+                    return NotFound($"Producto con ID {detalle.ProductoId} no encontrado");
+                }
+                if (detalle.Cantidad <= 0)
+                {           
                     return BadRequest("La cantidad debe ser mayor a cero");
                 }
                 var nuevoDetallePedido = new DetallePedido
                 {
                     ProductoId = detalle.ProductoId,
                     Cantidad = detalle.Cantidad,
-                    PrecioUnitario = Producto.
+                    PrecioUnitario = productoEncontrado.Precio
                 };
                 nuevoPedido.Detalles.Add(nuevoDetallePedido);
                 totalPedido += nuevoDetallePedido.Cantidad * nuevoDetallePedido.PrecioUnitario;
                 detalleResponse.Add(new DetallePedidoResponse
                 {
                     ProductoId = nuevoDetallePedido.ProductoId,
+                    NombreProducto = productoEncontrado.Nombre,
                     Cantidad = nuevoDetallePedido.Cantidad,
                     PrecioUnitario = nuevoDetallePedido.PrecioUnitario
                 });
@@ -77,7 +87,7 @@ namespace WebAppRestaurante2.Controllers
             {
                 Id = nuevoPedido.Id,
                 ClienteId = nuevoPedido.ClienteId,
-                NombreCliente = ClienteEncontrado.Nombre,
+                NombreCliente = clienteEncontrado.Nombre,
                 Fecha = nuevoPedido.Fecha,
                 Total = nuevoPedido.Total,
                 DetallesPedido = detalleResponse

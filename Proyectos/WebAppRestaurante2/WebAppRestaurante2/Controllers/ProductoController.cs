@@ -38,7 +38,7 @@ namespace WebAppRestaurante2.Controllers
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetById), new { id = producto.Id }, producto);
         }
-        [HttpPut("Actualizar/{Id}")]
+        [HttpPut("Actualizar/{i d}")]
         public async Task<ActionResult<Producto>> Actualizar(int id, Producto producto)
         {
             var productoEncontrado = await _context.Productos.FindAsync(id);
