@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("WebAppRestaurante2")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("WebApplication1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa99d44c9fb6fbc3fa7ab6d4ba2053af52b8d20f")]
-[assembly: System.Reflection.AssemblyProductAttribute("WebAppRestaurante2")]
-[assembly: System.Reflection.AssemblyTitleAttribute("WebAppRestaurante2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+273f350417b17779cbd939036705a807b725702a")]
+[assembly: System.Reflection.AssemblyProductAttribute("WebApplication1")]
+[assembly: System.Reflection.AssemblyTitleAttribute("WebApplication1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
